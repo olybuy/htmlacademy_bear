@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -35,12 +34,25 @@
       <option name="presentableId" value="Default" />
       <updated>1664358564984</updated>
       <workItem from="1664358566053" duration="2163000" />
-      <workItem from="1664360766353" duration="1687000" />
+      <workItem from="1664360766353" duration="2150000" />
+      <workItem from="1664362927654" duration="614000" />
     </task>
+    <task id="LOCAL-00001" summary="Settings">
+      <created>1664362532742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664362532743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Settings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="738" y="326" key="Github.ShareDialog" timestamp="1664361759072">
@@ -51,5 +63,9 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1664362544263">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1664362544263" />
   </component>
 </project>
