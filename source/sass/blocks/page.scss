@@ -1,4 +1,7 @@
 .page {
-  background: crimson;
-  color: aliceblue;
+  background: #fff;
+  color: #444444;
+  font-family: "OpenSans", "Arial", sans-serif;
+
+  @include font-style(15px, 24px, 400);
 }
