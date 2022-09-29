@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="" alt="Логотип компании Мишка.">
+      </a>
+      <nav class="header__main-nav">
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="main-nav__item">Вязание на заказ</li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav__item">Поиск по сайту</li>
+          <li class="user-nav__item">Корзина: пока пуста</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="promo-inner">
+      <h1 class="promo-inner__title">Вязание на заказ</h1>
+      <ul class="promo-inner__sublist promo-sublist">
+        <li class="promo-sublist__item">Новые поступления</li>
+        <li class="promo-sublist__item">Распродажа</li>
+      </ul>
+      <span class="promo-inner__note">Бесплатная доставка по России</span>
+    </section>
+    <section class="order">
+      <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="order-form__group">
+          <h2 class="order-form__title">Тип</h2>
+          <label class="order-form__field radio-field">
+            <input class="radio-field__input" type="radio" name="type" value="accessory" checked>
+            <span class="radio-field__mark"></span>
+            <span class="radio-field__label">Аксессуар для интерьера</span>
+          </label>
+          <label class="order-form__field radio-field">
+            <input class="radio-field__input" type="radio" name="type" value="kids">
+            <span class="radio-field__mark"></span>
+            <span class="radio-field__label">Детская игрушка</span>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <h2 class="order-form__title">Цвет</h2>
+          <label class="order-form__field checkbox-field">
+            <input class="checkbox-field__input" type="checkbox" name="white" checked>
+            <span class="checkbox-field__mark"></span>
+            <span class="checkbox-field__label">Белый</span>
+          </label>
+          <label class="order-form__field checkbox-field">
+            <input class="checkbox-field__input" type="checkbox" name="grey" checked>
+            <span class="checkbox-field__mark"></span>
+            <span class="checkbox-field__label">Серый</span>
+          </label>
+          <label class="order-form__field checkbox-field">
+            <input class="checkbox-field__input" type="checkbox" name="tiffany">
+            <span class="checkbox-field__mark"></span>
+            <span class="checkbox-field__label">Тиффани</span>
+          </label>
+          <label class="order-form__field checkbox-field">
+            <input class="checkbox-field__input" type="checkbox" name="black">
+            <span class="checkbox-field__mark"></span>
+            <span class="checkbox-field__label">Черный</span>
+          </label>
+          <label class="order-form__field checkbox-field">
+          <input class="checkbox-field__input" type="checkbox" name="pink">
+          <span class="checkbox-field__mark"></span>
+          <span class="checkbox-field__label">Розовый</span>
+          </label>
+          <label class="order-form__field checkbox-field">
+            <input class="checkbox-field__input" type="checkbox" name="orange">
+            <span class="checkbox-field__mark"></span>
+            <span class="checkbox-field__label">Оранжевый</span>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <h2 class="order-form__title">ФИО</h2>
+          <label class="order-form__field textfield-field">
+            <span class="textfield-field__label">Имя:</span>
+            <input class="textfield-field__input" type="text" name="name" required>
+          </label>
+          <label class="order-form__field textfield-field">
+            <span class="textfield-field__label">Фамилия:</span>
+            <input class="textfield-field__input" type="text" name="surname" required>
+          </label>
+          <label class="order-form__field textfield-field">
+            <span class="textfield-field__label">Отчество:</span>
+            <input class="textfield-field__input" type="text" name="fathersname">
+          </label>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <h2 class="order-form__title">Тел</h2>
+          <label class="order-form__field textfield-field">
+            <input class="textfield-field__input" type="tel" required>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <h2 class="order-form__title">E-mail</h2>
+          <label class="order-form__field textfield-field">
+            <input class="textfield-field__input" type="email" required>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <h2 class="order-form__title">Доп</h2>
+          <label class="order-form__field textarea-field">
+            <textarea class="textarea-field__input" rows="6" name="additional info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
+        <span class="order-form__note"></span>
+        <button class="order-form__button" type="submit"></button>
+      </form>
+    </section>
+    <footer class="footer">
+      <a class="footer__logo">
+        <img class="footer__logo-image" src="" alt="Логотип компании Мишка.">
+      </a>
+      <section class="socials">
+        <ul class="socials__list">
+          <li class="socials__item"></li>
+          <li class="socials__item"></li>
+          <li class="socials__item"></li>
+        </ul>
+        <div class="copyright">
+          <span class="copyright__text">Разработано</span>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
