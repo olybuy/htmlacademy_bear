@@ -1,0 +1,19 @@
+.promo-item__title {
+  color: $titleTextColor;
+
+  @include font-style(25px, 30px, 700);
+}
+
+.promo-item__note {
+  color: $primaryColor;
+
+  @include font-style(17px, 20px, 700);
+}
+
+.promo-item__price {
+  @include font-style(17px, 24px, 700);
+}
+
+.promo-item__button {
+  @include font-style(18px, 20px, 700);
+}

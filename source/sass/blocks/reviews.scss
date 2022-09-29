@@ -1,0 +1,5 @@
+.reviews__title {
+  color: $titleTextColor;
+
+  @include font-style(25px, 30px, 700);
+}

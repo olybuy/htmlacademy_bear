@@ -1,0 +1,13 @@
+.review__text {
+  @include font-style(15px, 30px, 400);
+}
+
+.review__author {
+  color: $titleTextColor;
+
+  @include font-style(17px, 24px, 700);
+}
+
+.review__author-link {
+  @include font-style(17px, 30px, 400);
+}

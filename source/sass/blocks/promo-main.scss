@@ -1,0 +1,5 @@
+.promo-main__title {
+  color: $titleTextColor;
+
+  @include font-style(27px, 30px, 700);
+}

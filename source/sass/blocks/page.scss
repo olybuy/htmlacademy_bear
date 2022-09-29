@@ -1,6 +1,6 @@
 .page {
-  background: #fff;
-  color: #444444;
+  background: $backgroundColor;
+  color: $primaryTextColor;
   font-family: "OpenSans", "Arial", sans-serif;
 
   @include font-style(15px, 24px, 400);

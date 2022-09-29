@@ -1,0 +1,11 @@
+.about__title {
+  color: $titleTextColor;
+
+  @include font-style(25px, 30px, 700);
+}
+
+.about__item {
+  color: $titleTextColor;
+
+  @include font-style(17px, 20px, 700);
+}

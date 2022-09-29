@@ -1,0 +1,5 @@
+.categories__item {
+  color: $secondaryTextColor;
+
+  @include font-style(19px, 24px, 400);
+}
