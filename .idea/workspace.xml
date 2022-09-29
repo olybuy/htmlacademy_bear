@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
       <updated>1664358564984</updated>
       <workItem from="1664358566053" duration="2163000" />
       <workItem from="1664360766353" duration="2150000" />
-      <workItem from="1664362927654" duration="6480000" />
+      <workItem from="1664362927654" duration="8056000" />
     </task>
     <task id="LOCAL-00001" summary="Settings">
       <created>1664362532742</created>
@@ -89,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664446561093</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Index structure">
+      <created>1664458535985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664458535985</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Settings" />
     <MESSAGE value="Setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting" />
+    <MESSAGE value="Index structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Index structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="208" key="EditFileWatcherDialog" timestamp="1664448163226">
@@ -124,10 +128,10 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1664446570562">
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1664458537744">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1664446570562" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1664458537744" />
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1664363585212">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
