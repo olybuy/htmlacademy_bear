@@ -1,0 +1,10 @@
+.order-form__title {
+  color: $primaryColor;
+  text-transform: uppercase;
+
+  @include font-style(17px, 16px, 700);
+}
+
+.order-form__note {
+  @include font-style(14px, 16px, 400);
+}

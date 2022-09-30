@@ -1,0 +1,5 @@
+.button {
+  text-transform: uppercase;
+
+  @include font-style(18px, 20px, 700);
+}

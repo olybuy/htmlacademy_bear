@@ -1,0 +1,7 @@
+.about-production__title {
+  @include font-style(17px, 24px, 700);
+}
+
+.about-production__description {
+  @include font-style(13px, 24px, 400);
+}

@@ -1,0 +1,11 @@
+.item__title {
+  @include font-style(17px, 24px, 700);
+}
+
+.item__specs {
+  @include font-style(13px, 30px, 400);
+}
+
+.item__price {
+  @include font-style(15px, 24px, 700);
+}

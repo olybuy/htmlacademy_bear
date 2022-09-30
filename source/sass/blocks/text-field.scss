@@ -1,0 +1,5 @@
+.text-field__label {
+  color: $titleTextColor;
+
+  @include font-style(17px, 18px, 700);
+}
