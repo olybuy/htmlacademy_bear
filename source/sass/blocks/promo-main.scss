@@ -1,5 +1,31 @@
+.promo-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 489px;
+  background-image: url("../img/bg/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url("../img/bg/hero-mobile@2x.jpg");
+  }
+}
+
 .promo-main__title {
+  padding: 73px 30px 0 30px;
+  margin: 0;
   color: $titleTextColor;
 
   @include font-style(27px, 30px, 700);
 }
+
+.promo-main__sublist {
+  display: none;
+}
+
+.promo-main__note {
+  display: none;
+}
+

@@ -1,0 +1,12 @@
+.socials {
+  margin: 0 auto;
+  padding-bottom: 28px;
+  width: 142px;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include list-reset;
+}

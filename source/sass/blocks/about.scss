@@ -1,11 +1,72 @@
+.about {
+  padding: 0 30px;
+  min-height: 856px;
+}
+
 .about__title {
+  margin: 0;
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
 }
 
 .about__item {
+  padding-top: 32px;
   color: $titleTextColor;
 
   @include font-style(17px, 20px, 700);
+
+  &::before {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+  }
+
+  &--eco::before {
+    margin-bottom: 16px;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/icon-eco.svg");
+  }
+
+  &--price::before {
+    margin-bottom: 26px;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-price.svg");
+  }
+
+  &--likes::before {
+    margin-bottom: 21px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-like.svg");
+  }
+
+  &--circle::before {
+    margin-bottom: 17px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-circle.svg");
+  }
+
+  &--support::before {
+    margin-bottom: 26px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-racket.svg");
+  }
+
+  &--present::before {
+    margin-bottom: 20px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-present.svg");
+  }
+}
+
+.about__list {
+  @include list-reset;
 }

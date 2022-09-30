@@ -1,0 +1,49 @@
+.toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: 0;
+  background-color: transparent;
+  z-index: 4;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $toggleColor;
+    box-shadow: 0 6px 0 0 $toggleColor, 0 12px 0 0 $toggleColor;
+    content: "";
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-nav--opened .toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 2px;
+    width: 21px;
+    background-color: $toggleColor;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

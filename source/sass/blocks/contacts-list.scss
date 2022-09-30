@@ -1,0 +1,11 @@
+.contacts-list {
+  display: grid;
+  grid-template-columns: 77px 1fr;
+  row-gap: 40px;
+  margin: 0;
+  padding: 35px 30px 67px;
+}
+
+.contacts-list__value {
+  margin: 0;
+}

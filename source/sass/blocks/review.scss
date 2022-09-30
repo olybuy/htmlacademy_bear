@@ -1,9 +1,14 @@
 .review__text {
+  margin: 0;
+  margin-bottom: 33px;
+
   @include font-style(15px, 30px, 400);
 }
 
 .review__author {
+  display: block;
   color: $titleTextColor;
+  margin-bottom: 30px;
 
   @include font-style(17px, 24px, 700);
 }

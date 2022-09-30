@@ -5,3 +5,9 @@
 
   @include font-style(15px, 24px, 400);
 }
+
+.page__body {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}

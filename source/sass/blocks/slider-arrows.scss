@@ -1,0 +1,27 @@
+.slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+  border: 1px solid $borderColor;
+}
+
+.slider-arrows__arrow {
+  background-color: $backgroundColor;
+  border: none;
+  width: 50px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-arrows__left {
+  background-image: url("../img/arrow-left.svg");
+  margin-left: 38px;
+}
+
+.slider-arrows__right {
+  background-image: url("../img/arrow-right.svg");
+  margin-right: 42px;
+}
+

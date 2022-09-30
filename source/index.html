@@ -6,28 +6,27 @@
     <title>Mishka</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body">
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="" alt="Логотип компании Мишка.">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка.">
       </a>
-      <nav class="header__main-nav">
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="main-nav__item">Вязание на заказ</li>
-        </ul>
-        <ul class="user-nav">
-          <li class="user-nav__item">Поиск по сайту</li>
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="form.html">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle toggle" type="button"></button>
+        <div class="main-nav__list">
+          <ul class="product-nav">
+            <li class="product-nav__item">
+              <a class="product-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="product-nav__item">Вязание на заказ</li>
+          </ul>
+          <ul class="user-nav">
+            <li class="user-nav__item">Поиск по сайту</li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="form.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="promo-main">
@@ -38,8 +37,8 @@
       </ul>
       <span class="promo-main__note">Бесплатная доставка по России</span>
       <ul class="promo-main__list categories">
-        <li class="categories__item">Предметы интерьера</li>
-        <li class="categories__item">Детские игрушки</li>
+        <li class="categories__item categories__item--interior">Предметы интерьера</li>
+        <li class="categories__item categories__item--toy categories__item--dark">Детские игрушки</li>
       </ul>
     </section>
     <section class="promo-item">
@@ -48,26 +47,32 @@
       <p class="promo-item__description">Экологически чистая пряжа,
         ручная работа. Доступны в шести расцветках и трёх размерах.</p>
       <dl class="promo-item__specs specs">
-        <dt class="specs__item">Цвет:</dt>
-        <dd class="specs__value">тиффани/серый</dd>
-        <dt class="specs__item">Диаметр:</dt>
-        <dd class="specs__value">25см</dd>
-        <dt class="specs__item">Высота:</dt>
-        <dd class="specs__value">15см</dd>
+        <div class="specs__row">
+          <dt class="specs__item">Цвет:</dt>
+          <dd class="specs__value">тиффани/серый</dd>
+        </div>
+        <div class="specs__row">
+          <dt class="specs__item">Диаметр:</dt>
+          <dd class="specs__value">25см</dd>
+        </div>
+        <div class="specs__row">
+          <dt class="specs__item">Высота:</dt>
+          <dd class="specs__value">15см</dd>
+        </div>
       </dl>
-      <img class="promo-item__image" src="" alt="Сложенные друг на друга три вязаные корзинки.">
+      <img class="promo-item__image" src="../img/content/triple-set-mobile.jpg" alt="Сложенные друг на друга три вязаные корзинки.">
       <span class="promo-item__price">Цена: 990 руб.</span>
-      <button class="promo-item__button button" type="button"></button>
+      <button class="promo-item__button button" type="button">Заказать</button>
     </section>
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item">Экологически чистые материалы</li>
-        <li class="about__item">Скандинавский стиль по российской цене</li>
-        <li class="about__item">Увеличивает лайки на фотографиях</li>
-        <li class="about__item">Связано вручную с любовью и умилением</li>
-        <li class="about__item">Поддержка отечественного производителя</li>
-        <li class="about__item">Поставляется в подарочной упаковке</li>
+        <li class="about__item about__item--eco">Экологически чистые материалы</li>
+        <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
+        <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
+        <li class="about__item about__item--circle">Связано вручную с любовью и умилением</li>
+        <li class="about__item about__item--support">Поддержка отечественного производителя</li>
+        <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
@@ -82,9 +87,9 @@
           <span class="review__author-link">@misssssiskras</span>
         </span>
       </div>
-      <div class="slider-arrows">
-        <button class="slider-arrows__left" type="button"></button>
-        <button class="slider-arrows__right" type="button"></button>
+      <div class="reviews__slider slider-arrows">
+        <button class="slider-arrows__arrow slider-arrows__left" type="button"></button>
+        <button class="slider-arrows__arrow slider-arrows__right" type="button"></button>
       </div>
       <button class="reviews__button button" type="button">Написать</button>
     </section>
@@ -96,23 +101,46 @@
         <dt class="contacts-list__item">адрес</dt>
         <dd class="contacts-list__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
       </dl>
-      <div class="map"></div>
-      <button class="contacts__button button" type="button"></button>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1664561673651!5m2!1sru!2s" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
     <footer class="footer">
-      <a class="footer__logo">
-        <img class="footer__logo-image" src="" alt="Логотип компании Мишка.">
-      </a>
-      <section class="socials">
+      <div class="socials">
         <ul class="socials__list">
-          <li class="socials__item"></li>
-          <li class="socials__item"></li>
-          <li class="socials__item"></li>
+          <li class="socials__item socials__item--vk">
+            <a href="#">
+              <svg class="socials__icon" width="28" height="23" aria-hidden="true">
+                <use href="img/sprite.svg#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item socials__item--youtube">
+            <a href="#">
+              <svg class="socials__icon" width="28" height="23" aria-hidden="true">
+                <use href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item socials__item--tg">
+            <a href="#">
+              <svg class="socials__icon" width="28" height="23" aria-hidden="true">
+                <use href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-        <div class="copyright">
+      </div>
+      <div class="copyright">
+        <a class="copyright__link" href="htmlacademy.ru">
           <span class="copyright__text">Разработано</span>
-        </div>
-      </section>
+          <svg class="copyright__logo" width="27" height="35" aria-hidden="true">
+            <use href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
