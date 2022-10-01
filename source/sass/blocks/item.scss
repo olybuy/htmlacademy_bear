@@ -1,11 +1,42 @@
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
 .item__title {
+  margin: 0;
+  margin-bottom: 6px;
+  color: $titleTextColor;
+
   @include font-style(17px, 24px, 700);
 }
 
 .item__specs {
+  display: block;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $borderColor;
+
   @include font-style(13px, 30px, 400);
 }
 
 .item__price {
   @include font-style(15px, 24px, 700);
+}
+
+.item__wrapper {
+  padding: 0 28px;
+}
+
+.item__image {
+  margin-bottom: 28px;
+}
+
+.item__button {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0 26px;
+}
+
+.item__icon {
+  opacity: 0.2;
 }

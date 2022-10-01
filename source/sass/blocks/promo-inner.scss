@@ -1,3 +1,23 @@
+.promo-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 177px;
+  background-color: $backgroundSecondaryColor;
+}
+
 .promo-inner__title {
+  display: block;
+  text-align: center;
+  color: $titleTextColor;
+
   @include font-style(27px, 30px, 700);
+}
+
+.promo-inner__sublist {
+  display: none;
+}
+
+.promo-inner__note {
+  display: none;
 }

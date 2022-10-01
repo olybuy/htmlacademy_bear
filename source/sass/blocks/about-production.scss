@@ -1,7 +1,47 @@
+.about-production {
+  padding: 22px 0 33px;
+  margin: 0 30px 58px;
+  border-bottom: 1px solid $borderColor;
+  border-top: 1px solid $borderColor;
+}
+
 .about-production__title {
+  display: block;
+  width: min-content;
+  color: $titleTextColor;
+
   @include font-style(17px, 24px, 700);
 }
 
+.about-production__title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+  margin-left: 34px;
+
+  &::before {
+    display: block;
+    margin-right: 25px;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/video.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
 .about-production__description {
+  margin-bottom: 41px;
+
   @include font-style(13px, 24px, 400);
 }
+
+.about-production__video {
+  margin-bottom: 35px;
+}
+
+.about-production__wrapper {
+  margin-left: 34px;
+}
+
