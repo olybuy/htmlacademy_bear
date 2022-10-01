@@ -8,22 +8,35 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo" href="index.html">
+      <a class="header__logo">
         <img class="header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка.">
       </a>
       <nav class="main-nav main-nav--closed">
+        <span class="visually-hidden">Открыть меню</span>
         <button class="main-nav__toggle toggle" type="button"></button>
-        <div class="main-nav__list">
-          <ul class="product-nav">
-            <li class="product-nav__item">
-              <a class="product-nav__link" href="catalog.html">Каталог товаров</a>
+        <div class="main-nav__list nav">
+          <ul class="product-nav nav__list">
+            <li class="product-nav__item nav__item">
+              <a class="product-nav__link nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="product-nav__item">Вязание на заказ</li>
+            <li class="product-nav__item nav__item">
+              <a class="product-nav__link nav__link" href="#">Вязание на заказ</a>
+            </li>
           </ul>
-          <ul class="user-nav">
-            <li class="user-nav__item">Поиск по сайту</li>
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="form.html">Корзина: пока пуста</a>
+          <ul class="user-nav nav__list">
+            <li class="user-nav__item nav__item">
+              <a class="product-nav__link nav__link" href="#">
+                <svg class="nav__icon" width="18" height="18" aria-hidden="true">
+                  <use href="img/sprite.svg#search"></use>
+                </svg>
+                Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item nav__item">
+              <a class="user-nav__link nav__link" href="form.html">
+                <svg class="nav__icon" width="21" height="18" aria-hidden="true">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+                Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -88,7 +101,9 @@
         </span>
       </div>
       <div class="reviews__slider slider-arrows">
+        <span class="visually-hidden">Листать назад</span>
         <button class="slider-arrows__arrow slider-arrows__left" type="button"></button>
+        <span class="visually-hidden">Листать вперед</span>
         <button class="slider-arrows__arrow slider-arrows__right" type="button"></button>
       </div>
       <button class="reviews__button button" type="button">Написать</button>
@@ -111,6 +126,7 @@
         <ul class="socials__list">
           <li class="socials__item socials__item--vk">
             <a href="#">
+              <span class="visually-hidden">Vkontakte</span>
               <svg class="socials__icon" width="28" height="23" aria-hidden="true">
                 <use href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
@@ -118,6 +134,7 @@
           </li>
           <li class="socials__item socials__item--youtube">
             <a href="#">
+              <span class="visually-hidden">YouTube</span>
               <svg class="socials__icon" width="28" height="23" aria-hidden="true">
                 <use href="img/sprite.svg#icon-youtube"></use>
               </svg>
@@ -125,6 +142,7 @@
           </li>
           <li class="socials__item socials__item--tg">
             <a href="#">
+              <span class="visually-hidden">Telegram</span>
               <svg class="socials__icon" width="28" height="23" aria-hidden="true">
                 <use href="img/sprite.svg#icon-telegram"></use>
               </svg>
@@ -135,6 +153,7 @@
       <div class="copyright">
         <a class="copyright__link" href="htmlacademy.ru">
           <span class="copyright__text">Разработано</span>
+          <span class="visually-hidden">в HTMLAcademy</span>
           <svg class="copyright__logo" width="27" height="35" aria-hidden="true">
             <use href="img/sprite.svg#htmlacademy"></use>
           </svg>

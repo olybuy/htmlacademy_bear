@@ -1,0 +1,22 @@
+.nav__list {
+  @include list-reset;
+}
+
+.nav__link {
+  display: block;
+  padding: 28px 30px 27px 76px;
+  border-bottom: 1px solid $borderColor;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $titleTextColor;
+
+  &:first-child {
+    border-top: 1px solid $borderColor;
+  }
+}
+
+.nav__icon {
+  position: absolute;
+  left: 30px;
+  opacity: 0.2;
+}

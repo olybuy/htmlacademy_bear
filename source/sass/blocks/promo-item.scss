@@ -6,6 +6,7 @@
 .promo-item__title {
   padding: 0;
   margin: 0;
+  margin-bottom: 4px;
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);

@@ -4,6 +4,7 @@
   background-color: $backgroundColor;
   text-transform: uppercase;
   border: 2px solid $primaryTextColor;
+  cursor: pointer;
 
   @include font-style(18px, 20px, 700);
 }
