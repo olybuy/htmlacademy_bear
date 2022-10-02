@@ -3,3 +3,17 @@
 
   @include font-style(17px, 18px, 700);
 }
+
+.text-field__input {
+  border: none;
+  border-bottom: 2px solid $primaryTextColor;
+  width: 100%;
+  padding: 17px 0;
+  margin-bottom: 22px;
+
+  @include font-style(17px, 18px, 400);
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
