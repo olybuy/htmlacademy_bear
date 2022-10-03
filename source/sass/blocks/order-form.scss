@@ -32,6 +32,9 @@
 }
 
 .order-form__note {
+  display: block;
+  margin-bottom: 30px;
+
   @include font-style(14px, 16px, 400);
 }
 

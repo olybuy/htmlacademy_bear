@@ -1,0 +1,16 @@
+.textarea-field {
+  padding: 30px 0 17px;
+}
+
+.textarea-field__input {
+  width: 100%;
+  padding: 17px;
+  box-sizing: border-box;
+  font-family: "OpenSans", "Arial", sans-serif;
+
+  @include font-style(17px, 18px, 400);
+}
+
+.textarea-field__input::placeholder {
+  opacity: 0.3;
+}

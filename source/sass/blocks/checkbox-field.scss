@@ -1,5 +1,44 @@
+.checkbox-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  min-height: 38px;
+}
+
 .checkbox-field__label {
   color: $titleTextColor;
+  padding-left: 61px;
 
   @include font-style(17px, 18px, 700);
+}
+
+.checkbox-field__input {
+  appearance: none;
+}
+
+.checkbox-field__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 1px solid $titleTextColor;
+  z-index: 1;
+  content: "";
+}
+
+.checkbox-field__input:checked + .checkbox-field__mark::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  background-image: url("../img/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 17px;
+  z-index: 3;
+  content: "";
 }
