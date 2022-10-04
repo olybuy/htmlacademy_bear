@@ -1,0 +1,17 @@
+.product-nav {
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    left: 50px;
+    top: 89px;
+    display: flex;
+    z-index: 2;
+
+    @include font-style(15px, 24px, 700);
+  }
+}
+
+.product-nav__link {
+  @media screen and (min-width: $tablet-width) {
+    padding: 20px;
+  }
+}

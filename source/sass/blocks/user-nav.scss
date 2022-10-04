@@ -1,0 +1,11 @@
+.user-nav {
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    right: 50px;
+    display: flex;
+  }
+}
+
+.user-nav__item {
+  border-left: 1px solid $borderColor;
+}

@@ -1,5 +1,10 @@
 .categories {
   @include list-reset;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    padding: 0 50px;
+  }
 }
 
 .categories__item {
@@ -37,5 +42,9 @@
 
   &::after {
     justify-self: end;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 127px;
   }
 }

@@ -1,4 +1,5 @@
 .promo-main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,9 +8,30 @@
   background-image: url("../img/bg/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
 
   @media screen and (min-resolution: 2dppx) {
     background-image: url("../img/bg/hero-mobile@2x.jpg");
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 746px;
+    background-image: url("../img/bg/hero-tablet.jpg");
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/zigzag.svg");
+      background-repeat: repeat-x;
+      z-index: 4;
+      content: "";
+    }
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../img/bg/hero-tablet@2x.jpg");
+    }
   }
 }
 
@@ -19,6 +41,12 @@
   color: $titleTextColor;
 
   @include font-style(27px, 30px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 154px 50px 0 50px;
+
+    @include font-style(43px, 50px, 700);
+  }
 }
 
 .promo-main__sublist {
@@ -27,5 +55,12 @@
 
 .promo-main__note {
   display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
 }
 

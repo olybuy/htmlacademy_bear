@@ -12,6 +12,22 @@
 
   &:first-child {
     border-top: 1px solid $borderColor;
+
+    @media screen and (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    border: none;
+    padding: 32.5px;
+  }
+
+  &--cart {
+    @media screen and (min-width: $tablet-width) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -19,4 +35,29 @@
   position: absolute;
   left: 30px;
   opacity: 0.2;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    left: 0;
+    margin-right: 30px;
+    display: block;
+  }
+
+  &--search {
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav__note {
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+  }
+
+  &--search {
+    @media screen and (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
