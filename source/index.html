@@ -60,26 +60,37 @@
     </section>
     <section class="promo-item">
       <h2 class="promo-item__title">Вязаные корзинки</h2>
-      <span class="promo-item__note">Товар недели</span>
-      <p class="promo-item__description">Экологически чистая пряжа,
-        ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-      <dl class="promo-item__specs specs">
-        <div class="specs__row">
-          <dt class="specs__item">Цвет:</dt>
-          <dd class="specs__value">тиффани/серый</dd>
+      <div class="promo-item__wrapper">
+        <p class="promo-item__description">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+        <dl class="promo-item__specs specs">
+          <div class="specs__row">
+            <dt class="specs__item">Цвет:</dt>
+            <dd class="specs__value">тиффани/серый</dd>
+          </div>
+          <div class="specs__row">
+            <dt class="specs__item">Диаметр:</dt>
+            <dd class="specs__value">25см</dd>
+          </div>
+          <div class="specs__row">
+            <dt class="specs__item">Высота:</dt>
+            <dd class="specs__value">15см</dd>
+          </div>
+        </dl>
+        <div class="promo-item__image">
+          <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/content/triple-set-tablet.webp 1x, img/content/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/triple-set-mobile.webp 1x, img/content/triple-set-mobile@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/content/triple-set-tablet.jpg 1x, img/content/triple-set-tablet@2x.jpg 2x">
+            <source srcset="img/content/triple-set-mobile.jpg 1x, img/content/triple-set-mobile@2x.jpg 2x">
+            <img class="promo-item__image" src="img/content/triple-set-mobile.jpg" srcset="img/content/triple-set-mobile.jpg 1x, img/content/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Сложенные друг на друга три вязаные корзинки.">
+          </picture>
         </div>
-        <div class="specs__row">
-          <dt class="specs__item">Диаметр:</dt>
-          <dd class="specs__value">25см</dd>
+        <div class="promo-item__price-wrapper">
+          <span class="promo-item__price">Цена: 990 руб.</span>
+          <button class="promo-item__button button" type="button">Заказать</button>
         </div>
-        <div class="specs__row">
-          <dt class="specs__item">Высота:</dt>
-          <dd class="specs__value">15см</dd>
-        </div>
-      </dl>
-      <img class="promo-item__image" src="../img/content/triple-set-mobile.jpg" alt="Сложенные друг на друга три вязаные корзинки.">
-      <span class="promo-item__price">Цена: 990 руб.</span>
-      <button class="promo-item__button button" type="button">Заказать</button>
+      </div>
     </section>
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>

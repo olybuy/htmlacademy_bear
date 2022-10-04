@@ -1,6 +1,10 @@
 .about {
   padding: 0 30px;
   min-height: 856px;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 583px;
+  }
 }
 
 .about__title {
@@ -69,4 +73,12 @@
 
 .about__list {
   @include list-reset;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 63px;
+    row-gap: 57px;
+    padding: 0 50px;
+  }
 }

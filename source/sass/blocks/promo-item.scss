@@ -1,6 +1,25 @@
 .promo-item {
   padding: 31px 30px 42px;
   min-height: 826px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    padding: 40px 0 52px;
+    min-height: 508px;
+  }
+
+  &::after {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/zigzag-line.svg");
+      background-repeat: repeat-x;
+      z-index: 4;
+      content: "";
+    }
+  }
 }
 
 .promo-item__title {
@@ -10,15 +29,41 @@
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
+
+  &::after {
+    display: block;
+    color: $primaryColor;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    content: "Товар недели";
+
+    @include font-style(17px, 20px, 700);
+
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 38px;
+    padding: 0 50px;
+
+    @include font-style(43px, 50px, 700);
+  }
 }
 
-.promo-item__note {
-  display: block;
-  color: $primaryColor;
-  text-transform: uppercase;
-  margin-bottom: 17px;
-
-  @include font-style(17px, 20px, 700);
+.promo-item__wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 292px 404px;
+    column-gap: 42px;
+    padding: 0 50px;
+  }
 }
 
 .promo-item__price {
@@ -31,6 +76,10 @@
 
 .promo-item__button {
   @include font-style(18px, 20px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    width: 292px;
+  }
 }
 
 .promo-item__description {
@@ -38,9 +87,31 @@
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 48px;
+
+    @include font-style(17px, 30px, 400);
+  }
 }
 
 .promo-item__specs {
   margin: 0;
   margin-bottom: 29px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.promo-item__image {
+  width: 260px;
+  height: 315px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+  }
 }

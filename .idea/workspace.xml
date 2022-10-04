@@ -20,29 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/img/bg/hero-tablet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/bg/hero-tablet@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/bg/review-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/bg/review-bg@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/content/triple-set-tablet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/content/triple-set-tablet@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/mishka-logo-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/zigzag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/product-nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/user-nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/varibales/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/zigzag-line.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/main-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/main-nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/promo-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/promo-main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/toggle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/toggle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/promo-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/promo-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/specs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/specs.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +74,7 @@
       <updated>1664358564984</updated>
       <workItem from="1664358566053" duration="2163000" />
       <workItem from="1664360766353" duration="2150000" />
-      <workItem from="1664362927654" duration="66408000" />
+      <workItem from="1664362927654" duration="73121000" />
     </task>
     <task id="LOCAL-00001" summary="Settings">
       <created>1664362532742</created>
@@ -191,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664826210030</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Part of tablet index">
+      <created>1664881191989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664881191989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +211,8 @@
     <MESSAGE value="Catalog" />
     <MESSAGE value="Start form" />
     <MESSAGE value="Form finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form finished" />
+    <MESSAGE value="Part of tablet index" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part of tablet index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="208" key="EditFileWatcherDialog" timestamp="1664448163226">
@@ -236,10 +227,10 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1664826218022">
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1664881194040">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1664826218022" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1664881194040" />
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1664363585212">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
