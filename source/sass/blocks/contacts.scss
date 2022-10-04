@@ -1,5 +1,12 @@
 .contacts {
   min-height: 896px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 46px;
+    min-height: 824px;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
 
 .contacts__title {
@@ -8,17 +15,34 @@
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
-}
 
-.contacts-list__item {
-  @include font-style(14px, 30px, 400);
-}
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    padding: 0 50px;
 
-.contacts__list {
-  padding: 0 30px;
+    @include font-style(43px, 50px, 700);
+  }
+
+  &::before {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 50px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      content: "";
+    }
+  }
 }
 
 .contacts__button {
   margin: 42px 30px 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 55px 0 57px;
+  }
 }
 

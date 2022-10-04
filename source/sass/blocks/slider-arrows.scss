@@ -4,6 +4,10 @@
   align-items: center;
   min-height: 52px;
   border: 1px solid $borderColor;
+
+  @media screen and (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .slider-arrows__arrow {
@@ -19,10 +23,18 @@
 .slider-arrows__left {
   background-image: url("../img/arrow-left.svg");
   margin-left: 38px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .slider-arrows__right {
   background-image: url("../img/arrow-right.svg");
   margin-right: 42px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 

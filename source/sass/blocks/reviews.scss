@@ -1,6 +1,43 @@
 .reviews {
   padding: 0 30px;
   min-height: 627px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template:
+    "title title button" min-content
+    "review review review" min-content
+    "author author arrows" min-content;
+    padding: 79px 50px 132px;
+    min-height: 457px;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      width: 350px;
+      height: 457px;
+      background-image: url("../img/bg/review-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+
+  &::after {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/zigzag-line.svg");
+      background-repeat: repeat-x;
+      z-index: 4;
+      content: "";
+    }
+  }
 }
 
 .reviews__title {
@@ -9,8 +46,64 @@
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    grid-area: title;
+    margin-bottom: 0;
+    z-index: 2;
+
+    @include font-style(43px, 50px, 700);
+  }
 }
 
 .reviews__slider {
   margin: 30px 0 38px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+    width: 178px;
+    justify-self: end;
+  }
+}
+
+.reviews__button {
+  @media screen and (min-width: $tablet-width) {
+    grid-area: button;
+    margin-bottom: 40px;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include font-style(15px, 30px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    grid-area: review;
+    margin-bottom: 61px;
+    z-index: 2;
+
+    @include font-style(17px, 30px, 400);
+  }
+}
+
+.reviews__author {
+  display: block;
+  color: $titleTextColor;
+  margin-bottom: 30px;
+
+  @include font-style(17px, 24px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    grid-area: author;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+}
+
+.reviews__author-link {
+  display: block;
+
+  @include font-style(17px, 30px, 400);
 }

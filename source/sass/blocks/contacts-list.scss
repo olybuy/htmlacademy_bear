@@ -1,9 +1,26 @@
 .contacts-list {
-  display: grid;
-  grid-template-columns: 77px 1fr;
-  row-gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   margin: 0;
   padding: 35px 30px 67px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 49px 50px;
+  }
+}
+
+.contacts-list__row {
+  display: flex;
+  gap: 30px;
+
+  @include font-style(14px, 30px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(17px, 30px, 400);
+  }
 }
 
 .contacts-list__value {

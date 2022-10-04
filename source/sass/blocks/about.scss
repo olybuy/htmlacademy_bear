@@ -4,6 +4,7 @@
 
   @media screen and (min-width: $tablet-width) {
     min-height: 583px;
+    padding: 56px 50px 82px;
   }
 }
 
@@ -12,6 +13,10 @@
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(43px, 50px, 700);
+  }
 }
 
 .about__item {
@@ -69,6 +74,10 @@
     height: 32px;
     background-image: url("../img/icon-present.svg");
   }
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(20px, 22px, 700);
+  }
 }
 
 .about__list {
@@ -79,6 +88,5 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 63px;
     row-gap: 57px;
-    padding: 0 50px;
   }
 }
