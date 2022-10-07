@@ -2,6 +2,10 @@
   margin: 0 auto;
   padding-bottom: 28px;
   width: 142px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .socials__list {

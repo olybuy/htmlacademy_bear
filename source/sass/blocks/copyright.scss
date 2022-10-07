@@ -2,6 +2,11 @@
   text-align: center;
   padding-top: 22px;
   border-top: 1px solid $borderSecondaryColor;
+
+  @media screen and (min-width: $tablet-width) {
+    border: none;
+    padding-top: 0;
+  }
 }
 
 .copyright__text {

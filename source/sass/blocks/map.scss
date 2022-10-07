@@ -1,3 +1,7 @@
 .map__frame {
   width: 100%;
+
+  @media screen and (min-width: $desktop-width) {
+    height: 100%;
+  }
 }

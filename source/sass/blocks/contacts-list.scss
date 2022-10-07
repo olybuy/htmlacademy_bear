@@ -10,6 +10,13 @@
     grid-template-columns: 1fr 1fr;
     padding: 49px 50px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 84px;
+  }
 }
 
 .contacts-list__row {

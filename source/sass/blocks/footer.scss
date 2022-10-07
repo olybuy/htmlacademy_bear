@@ -3,4 +3,20 @@
   min-height: 160px;
   background-color: $backgroundSecondaryColor;
   box-sizing: border-box;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    min-height: 143px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.footer__logo-image {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+  }
 }

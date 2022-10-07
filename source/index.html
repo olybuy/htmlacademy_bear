@@ -79,8 +79,10 @@
         </dl>
         <div class="promo-item__image">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/content/triple-set-desktop.webp 1x, img/content/triple-set-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/webp" srcset="img/content/triple-set-tablet.webp 1x, img/content/triple-set-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/triple-set-mobile.webp 1x, img/content/triple-set-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/content/triple-set-desktop.jpg 1x, img/content/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/triple-set-tablet.jpg 1x, img/content/triple-set-tablet@2x.jpg 2x">
             <source srcset="img/content/triple-set-mobile.jpg 1x, img/content/triple-set-mobile@2x.jpg 2x">
             <img class="promo-item__image" src="img/content/triple-set-mobile.jpg" srcset="img/content/triple-set-mobile.jpg 1x, img/content/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Сложенные друг на друга три вязаные корзинки.">
@@ -133,12 +135,13 @@
           <dd class="contacts-list__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
         </div>
       </dl>
-      <div class="map">
+      <div class="contacts__map map">
         <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1664561673651!5m2!1sru!2s" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
     <footer class="footer">
+      <img class="footer__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка.">
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item socials__item--vk">
