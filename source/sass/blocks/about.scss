@@ -1,9 +1,7 @@
 .about {
   padding: 0 30px;
-  min-height: 856px;
 
   @media screen and (min-width: $tablet-width) {
-    min-height: 583px;
     padding: 56px 50px 82px;
   }
 

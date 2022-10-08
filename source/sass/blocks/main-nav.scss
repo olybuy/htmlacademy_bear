@@ -1,3 +1,9 @@
+.main-nav {
+  @media screen and (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .main-nav__list {
   position: absolute;
   top: 79px;
@@ -17,6 +23,11 @@
 
   @media screen and (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

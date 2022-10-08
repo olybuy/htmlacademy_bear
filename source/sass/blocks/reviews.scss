@@ -1,6 +1,5 @@
 .reviews {
   padding: 0 30px;
-  min-height: 627px;
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
@@ -10,7 +9,6 @@
     "review review review" min-content
     "author author arrows" min-content;
     padding: 79px 50px 132px;
-    min-height: 457px;
     box-sizing: border-box;
   }
 

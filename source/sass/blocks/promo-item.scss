@@ -1,11 +1,9 @@
 .promo-item {
   padding: 31px 30px 42px;
-  min-height: 826px;
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
     padding: 40px 0 52px;
-    min-height: 508px;
   }
 
   &::after {
@@ -25,7 +23,6 @@
 .promo-item__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 4px;
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
@@ -35,6 +32,7 @@
     color: $primaryColor;
     text-transform: uppercase;
     margin-bottom: 17px;
+    margin-top: 4px;
     content: "Товар недели";
 
     @include font-style(17px, 20px, 700);
@@ -126,6 +124,7 @@
 .promo-item__image {
   width: 260px;
   height: 315px;
+  margin: 0 auto;
 
   @media screen and (min-width: $tablet-width) {
     width: 334px;

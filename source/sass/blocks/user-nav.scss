@@ -4,6 +4,10 @@
     right: 50px;
     display: flex;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .user-nav__item {

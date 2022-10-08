@@ -14,7 +14,7 @@
     background-image: url("../img/bg/hero-mobile@2x.jpg");
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $mobile-tablet-width) {
     min-height: 746px;
     background-image: url("../img/bg/hero-tablet.jpg");
 
@@ -51,6 +51,12 @@
 
 .promo-main__sublist {
   display: none;
+
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    top: 19px;
+    left: 27.5px;
+  }
 }
 
 .promo-main__note {

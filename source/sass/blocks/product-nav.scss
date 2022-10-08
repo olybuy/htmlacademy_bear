@@ -8,6 +8,13 @@
 
     @include font-style(15px, 24px, 700);
   }
+
+  @media screen and (min-width: $desktop-width) {
+    position: static;
+    align-items: center;
+
+    @include font-style(17px, 24px, 700);
+  }
 }
 
 .product-nav__link {

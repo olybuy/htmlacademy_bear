@@ -20,23 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/img/bg/hero-desktop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/bg/hero-desktop@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/content/triple-set-desktop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/content/triple-set-desktop@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/promo-sublist.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/contacts-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/contacts-list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/copyright.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/copyright.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/map.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/main-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/main-nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/product-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/product-nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/promo-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/promo-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/promo-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/promo-main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/socials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/socials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/user-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/user-nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/varibales/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/varibales/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +85,7 @@
       <updated>1664358564984</updated>
       <workItem from="1664358566053" duration="2163000" />
       <workItem from="1664360766353" duration="2150000" />
-      <workItem from="1664362927654" duration="87542000" />
+      <workItem from="1664362927654" duration="93513000" />
     </task>
     <task id="LOCAL-00001" summary="Settings">
       <created>1664362532742</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664913830972</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Finish desktop index">
+      <created>1665161147664</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665161147664</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +245,8 @@
     <MESSAGE value="Form finished" />
     <MESSAGE value="Part of tablet index" />
     <MESSAGE value="Finish tablet index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish tablet index" />
+    <MESSAGE value="Finish desktop index" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish desktop index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="615" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1664905088465">
@@ -258,10 +265,10 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1664913832310">
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1665161148983">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1664913832310" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1665161148983" />
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1664363585212">
       <screen x="0" y="25" width="1440" height="791" />
     </state>

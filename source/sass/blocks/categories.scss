@@ -1,7 +1,7 @@
 .categories {
   @include list-reset;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $mobile-tablet-width) {
     display: flex;
     padding: 0 50px;
   }

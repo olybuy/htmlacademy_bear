@@ -1,5 +1,7 @@
 .button {
+  display: block;
   padding: 16px;
+  margin: 0 auto;
   min-width: 260px;
   background-color: $backgroundColor;
   text-transform: uppercase;

@@ -1,0 +1,15 @@
+.promo-sublist {
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+
+    @include list-reset;
+  }
+}
+
+.promo-sublist__link {
+  padding: 19px 22.5px;
+  text-decoration: none;
+  color: $primaryTextColor;
+
+  @include font-style(15px, 24px, 700);
+}
