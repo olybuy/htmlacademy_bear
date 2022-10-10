@@ -3,25 +3,29 @@
 
   @media screen and (min-width: $mobile-tablet-width) {
     display: flex;
-    padding: 0 50px;
   }
 }
 
 .categories__item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-content: center;
-  min-height: 103px;
-  padding: 0 30px;
-  color: $secondaryTextColor;
+  padding: 30px;
   background-color: $primaryColor;
   box-sizing: border-box;
-  text-align: left;
 
   @include font-style(19px, 24px, 700);
 
   &--dark {
     background-color: $secondaryColor;
+  }
+
+  &--interior {
+    padding: 23px 36px 18px 30px;
+
+    @media screen and (min-width: $mobile-tablet-width) {
+      padding-bottom: 18+24px;
+    }
   }
 
   &--interior::after {
@@ -30,6 +34,14 @@
     height: 62px;
     background-image: url("../img/icon-interior.svg");
     content: "";
+  }
+
+  &--toy {
+    padding: 21px 30px 22px;
+
+    @media screen and (min-width: $mobile-tablet-width) {
+      padding-bottom: 22+24px;
+    }
   }
 
   &--toy::after {
@@ -42,10 +54,18 @@
 
   &::after {
     justify-self: end;
+    align-self: center;
   }
 
-  @media screen and (min-width: $tablet-width) {
-    min-height: 127px;
+  @media screen and (min-width: $mobile-tablet-width) {
     width: 100%;
+
+    @include font-style(20px, 30px, 700);
   }
+}
+
+.categories__link {
+  color: $secondaryTextColor;
+  text-align: left;
+  text-decoration: none;
 }

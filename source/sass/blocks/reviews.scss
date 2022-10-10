@@ -1,6 +1,4 @@
 .reviews {
-  padding: 0 30px;
-
   @media screen and (min-width: $tablet-width) {
     position: relative;
     display: grid;
@@ -8,12 +6,7 @@
     "title title button" min-content
     "review review review" min-content
     "author author arrows" min-content;
-    padding: 79px 50px 132px;
     box-sizing: border-box;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    padding-left: 226px;
   }
 
   &::before {

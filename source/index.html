@@ -6,8 +6,8 @@
     <title>Mishka</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
-    <header class="header">
+  <body class="page__body main">
+    <header class="main__header header">
       <a class="header__logo">
         <picture>
           <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/mishka-logo-dark.svg">
@@ -46,8 +46,8 @@
         </div>
       </nav>
     </header>
-    <section class="promo-main">
-      <h1 class="promo-main__title">Милые штуки ручной работы для дома</h1>
+    <section class="main__promo promo-main">
+      <h1 class="promo-main__title">Милые штуки ручной<br/> работы для дома</h1>
       <ul class="promo-main__sublist promo-sublist">
         <li class="promo-sublist__item">
           <a class="promo-sublist__link" href="#">Новые поступления</a>
@@ -58,11 +58,16 @@
       </ul>
       <span class="promo-main__note">Бесплатная доставка по России</span>
       <ul class="promo-main__list categories">
-        <li class="categories__item categories__item--interior">Предметы интерьера</li>
-        <li class="categories__item categories__item--toy categories__item--dark">Детские игрушки</li>
+        <li class="categories__item categories__item--interior">
+          <a class="categories__link" href="">Предметы<br/> интерьера</a>
+        </li>
+        <li class="categories__item categories__item--toy categories__item--dark">
+          <a class="categories__link" href="">Детские<br/> игрушки
+          </a>
+        </li>
       </ul>
     </section>
-    <section class="promo-item">
+    <section class="main__promo-item promo-item">
       <h2 class="promo-item__title">Вязаные корзинки</h2>
       <div class="promo-item__wrapper">
         <p class="promo-item__description">Экологически чистая пряжа,
@@ -98,7 +103,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="main__about about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
         <li class="about__item about__item--eco">Экологически чистые материалы</li>
@@ -109,7 +114,7 @@
         <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="main__reviews reviews">
       <h2 class="reviews__title">Отзывы</h2>
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
           у популярных инстамамочек.
@@ -127,7 +132,7 @@
       </div>
       <button class="reviews__button button" type="button">Написать</button>
     </section>
-    <section class="contacts">
+    <section class="main__contacts contacts">
       <h2 class="contacts__title">Контакты</h2>
       <dl class="contacts__list contacts-list">
         <div class="contacts-list__row">
@@ -144,7 +149,7 @@
       </div>
       <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
-    <footer class="footer">
+    <footer class="main__footer footer">
       <img class="footer__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка.">
       <div class="socials">
         <ul class="socials__list">

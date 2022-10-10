@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  padding: 0 30px;
   min-height: 79px;
 
   @include font-style(17px, 24px, 700);
@@ -8,12 +7,10 @@
   @media screen and (min-width: $tablet-width) {
     display: flex;
     min-height: 89px;
-    padding: 0 50px;
   }
 
   @media screen and (min-width: $desktop-width) {
     justify-content: space-between;
-    padding-left: 30px;
   }
 }
 

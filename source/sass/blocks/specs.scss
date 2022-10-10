@@ -10,10 +10,14 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 30px;
-  padding: 13px 0 20px;
+  padding: 8px 0 12px;
   border-bottom: 1px solid $borderColor;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 10px 0 12px;
+    padding: 6px 0 10px;
+  }
+
+  &:first-child {
+    padding-top: 0;
   }
 }

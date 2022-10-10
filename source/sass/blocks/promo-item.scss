@@ -1,12 +1,26 @@
 .promo-item {
-  padding: 31px 30px 42px;
+  position: relative;
+  padding-bottom: 42px;
+  margin-bottom: 31px;
 
   @media screen and (min-width: $tablet-width) {
-    position: relative;
-    padding: 40px 0 52px;
+    padding-bottom: 69px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 90px;
   }
 
   &::after {
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+    background-image: url("../img/zigzag-line-mobile.svg");
+    background-repeat: repeat-x;
+    z-index: 4;
+    content: "";
+
     @media screen and (min-width: $tablet-width) {
       position: absolute;
       bottom: 0;
@@ -21,8 +35,7 @@
 }
 
 .promo-item__title {
-  padding: 0;
-  margin: 0;
+  margin: 0 30px;
   color: $titleTextColor;
 
   @include font-style(25px, 30px, 700);
@@ -45,53 +58,68 @@
       margin-bottom: 0;
     }
     @media screen and (min-width: $desktop-width) {
-      left: 82px;
+      left: 32px;
     }
   }
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 38px;
-    padding: 0 50px;
+    margin: 0 50px 38px 50px;
 
     @include font-style(43px, 50px, 700);
   }
 
   @media screen and (min-width: $desktop-width) {
     position: absolute;
-    top: 115px;
-    padding-left: 226px;
+    top: 61px;
+    padding-left: 174px;
+    margin-bottom: 35px;
 
     @include font-style(53px, 57px, 700);
   }
 }
 
 .promo-item__wrapper {
+  margin: 0 30px;
+
   @media screen and (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 292px 404px;
     column-gap: 42px;
-    padding: 0 50px;
+    margin: 0 50px;
   }
   @media screen and (min-width: $desktop-width) {
-    padding-left: 226px;
+    padding-left: 174px;
     column-gap: 57px;
   }
 }
 
 .promo-item__price {
   display: block;
+  margin-bottom: 24.5px;
   text-align: center;
-  padding: 25px 0;
 
   @include font-style(17px, 24px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 33px;
+
+    @include font-style(20px, 24px, 700);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .promo-item__button {
+  color: $primaryTextColor;
+
   @include font-style(18px, 20px, 700);
 
   @media screen and (min-width: $tablet-width) {
     width: 292px;
+
+    @include font-style(17px, 20px, 700);
   }
 }
 
@@ -108,16 +136,21 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-top: 207px;
+    margin-top: 153px;
+    margin-bottom: 60px;
   }
 }
 
 .promo-item__specs {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 57px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 109px;
   }
 }
 
@@ -125,16 +158,21 @@
   width: 260px;
   height: 315px;
   margin: 0 auto;
+  margin-bottom: 25.5px;
 
   @media screen and (min-width: $tablet-width) {
     width: 334px;
     height: 404px;
+    object-fit: cover;
     grid-row: 1 / span 3;
     grid-column: 2 / span 1;
+    align-self: end;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
+    padding-top: 0;
   }
 }
