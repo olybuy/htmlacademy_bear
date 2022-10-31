@@ -23,34 +23,34 @@
 }
 
 .main__promo-item {
-
+  margin-bottom: 31px;
 
   @media screen and (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 63px;
   }
 }
 
 .main__about {
-  padding: 0 30px;
+  margin-bottom: 57px;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 56px 50px 82px;
+    margin-bottom: 82px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-left: 226px;
+    margin-bottom: 90px;
   }
 }
 
 .main__reviews {
-  padding: 0 30px;
+  margin-bottom: 38px;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 79px 50px 132px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    padding-left: 226px;
+    margin-bottom: 46px;
   }
 }
 

@@ -1,11 +1,12 @@
 .button {
   display: block;
-  padding: 16px;
+  padding: 14px;
   margin: 0 auto;
   min-width: 260px;
   background-color: $backgroundColor;
   text-transform: uppercase;
   border: 2px solid $primaryTextColor;
+  color: $primaryTextColor;
   cursor: pointer;
 
   @include font-style(18px, 20px, 700);

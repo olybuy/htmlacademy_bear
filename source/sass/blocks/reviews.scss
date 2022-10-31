@@ -1,12 +1,9 @@
 .reviews {
-  @media screen and (min-width: $tablet-width) {
-    position: relative;
-    display: grid;
-    grid-template:
-    "title title button" min-content
-    "review review review" min-content
-    "author author arrows" min-content;
-    box-sizing: border-box;
+  position: relative;
+  padding-bottom: 45px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 226px;
   }
 
   &::before {
@@ -22,6 +19,15 @@
   }
 
   &::after {
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+    background-image: url("../img/zigzag-line-mobile.svg");
+    background-repeat: repeat-x;
+    z-index: 4;
+    content: "";
+
     @media screen and (min-width: $tablet-width) {
       position: absolute;
       bottom: 0;
@@ -32,6 +38,24 @@
       z-index: 4;
       content: "";
     }
+  }
+}
+
+.reviews__wrapper {
+  padding: 0 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template:
+    "title title button" min-content
+    "review review review" min-content
+    "author author arrows" min-content;
+    padding: 79px 50px 132px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+
   }
 }
 
@@ -69,6 +93,11 @@
   @media screen and (min-width: $tablet-width) {
     grid-area: button;
     margin-bottom: 40px;
+    margin-right: 0;
+    min-width: 175px;
+    box-sizing: border-box;
+
+    @include font-style(17px, 20px, 700);
   }
 }
 
