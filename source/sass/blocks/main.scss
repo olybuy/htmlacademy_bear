@@ -80,3 +80,15 @@
     padding-right: 50px;
   }
 }
+
+.main__promo-inner {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $mobile-tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 111px;
+  }
+}

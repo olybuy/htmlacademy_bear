@@ -1,0 +1,10 @@
+.promo-note {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+}

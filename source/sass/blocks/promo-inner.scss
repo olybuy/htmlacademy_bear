@@ -1,21 +1,51 @@
 .promo-inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 177px;
   background-color: $backgroundSecondaryColor;
+
+  @media screen and (min-width: $mobile-tablet-width) {
+    justify-content: start;
+    min-height: 238px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/zigzag.svg");
+      background-repeat: repeat-x;
+      z-index: 4;
+      content: "";
+    }
+  }
 }
 
 .promo-inner__title {
   display: block;
+  margin: 0;
   text-align: center;
   color: $titleTextColor;
 
   @include font-style(27px, 30px, 700);
+
+  @media screen and (min-width: $mobile-tablet-width) {
+    padding-top: 100px;
+
+    @include font-style(43px, 50px, 700);
+  }
 }
 
 .promo-inner__sublist {
   display: none;
+
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    top: 19px;
+    left: 27.5px;
+  }
 }
 
 .promo-inner__note {
