@@ -15,18 +15,6 @@
 }
 
 .main__promo {
-  margin-bottom: 31px;
-
-  @media screen and (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-bottom: 54px;
-  }
-}
-
-.main__promo--inner {
   margin-bottom: 30px;
 
   @media screen and (min-width: $mobile-tablet-width) {
@@ -35,6 +23,18 @@
 
   @media screen and (min-width: $desktop-width) {
     margin-bottom: 111px;
+  }
+}
+
+.main__promo--main {
+  margin-bottom: 31px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 54px;
   }
 }
 

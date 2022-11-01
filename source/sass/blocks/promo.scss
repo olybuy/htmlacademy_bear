@@ -2,36 +2,32 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  background-image: url("../img/bg/hero-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  justify-content: center;
+  min-height: 177px;
+  background-color: $backgroundSecondaryColor;
 
-  &--inner {
-    justify-content: center;
-    min-height: 177px;
-    background-color: $backgroundSecondaryColor;
-    background-image: none;
+  &--main {
+    justify-content: space-between;
+    text-align: center;
+    background-image: url("../img/bg/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../img/bg/hero-mobile@2x.jpg");
-
-    &--inner {
-      background-image: none;
+    &--main {
+      background-image: url("../img/bg/hero-mobile@2x.jpg");
     }
   }
 
   @media screen and (min-width: $mobile-tablet-width) {
-    background-image: url("../img/bg/hero-tablet.jpg");
-    background-position: top;
+    justify-content: start;
+    min-height: 238px;
 
-    &--inner {
-      justify-content: start;
-      min-height: 238px;
-      background-image: none;
+    &--main {
+      background-image: url("../img/bg/hero-tablet.jpg");
+      background-position: top;
     }
 
     &::after {
@@ -46,63 +42,55 @@
     }
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../img/bg/hero-tablet@2x.jpg");
-
-      &--inner {
-        background-image: none;
+      &--main {
+        background-image: url("../img/bg/hero-tablet@2x.jpg");
       }
     }
   }
 
   @media screen and (min-width: $tablet-desktop-width) {
-    background-image: url("../img/bg/hero-desktop.jpg");
-
-    &--inner {
-      background-image: none;
+    &--main {
+      background-image: url("../img/bg/hero-desktop.jpg");
     }
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../img/bg/hero-desktop@2x.jpg");
-
-      &--inner {
-        background-image: none;
+      &--main {
+        background-image: url("../img/bg/hero-desktop@2x.jpg");
       }
     }
   }
 }
 
 .promo__title {
-  padding: 73px 30px 120px;
+  display: block;
   margin: 0;
+  padding: 0;
+  text-align: center;
   color: $titleTextColor;
 
   @include font-style(27px, 30px, 700);
 
-  &--inner {
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: $titleTextColor;
+  &--main {
+    padding: 73px 30px 120px;
   }
 
   @media screen and (min-width: $mobile-tablet-width) {
-    padding: 154px 50px 372px 50px;
+    padding: 100px 50px 0;
 
     @include font-style(43px, 50px, 700);
 
-    &--inner {
-      padding: 100px 50px 0;
+    &--main {
+      padding: 154px 50px 372px 50px;
     }
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 157px 50px 355px 50px;
+    padding: 100px 50px 0;
 
     @include font-style(53px, 57px, 700);
 
-    &--inner {
-      padding: 100px 50px 0;
+    &--main {
+      padding: 157px 50px 355px 50px;
     }
   }
 }
