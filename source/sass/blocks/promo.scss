@@ -1,4 +1,4 @@
-.promo-main {
+.promo {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,30 @@
   background-position: top;
   background-size: cover;
 
+  &--inner {
+    justify-content: center;
+    min-height: 177px;
+    background-color: $backgroundSecondaryColor;
+    background-image: none;
+  }
+
   @media screen and (min-resolution: 2dppx) {
     background-image: url("../img/bg/hero-mobile@2x.jpg");
+
+    &--inner {
+      background-image: none;
+    }
   }
 
   @media screen and (min-width: $mobile-tablet-width) {
     background-image: url("../img/bg/hero-tablet.jpg");
     background-position: top;
+
+    &--inner {
+      justify-content: start;
+      min-height: 238px;
+      background-image: none;
+    }
 
     &::after {
       position: absolute;
@@ -30,45 +47,73 @@
 
     @media screen and (min-resolution: 2dppx) {
       background-image: url("../img/bg/hero-tablet@2x.jpg");
+
+      &--inner {
+        background-image: none;
+      }
     }
   }
 
   @media screen and (min-width: $tablet-desktop-width) {
     background-image: url("../img/bg/hero-desktop.jpg");
 
+    &--inner {
+      background-image: none;
+    }
+
     @media screen and (min-resolution: 2dppx) {
       background-image: url("../img/bg/hero-desktop@2x.jpg");
+
+      &--inner {
+        background-image: none;
+      }
     }
   }
 }
 
-.promo-main__title {
+.promo__title {
   padding: 73px 30px 120px;
   margin: 0;
   color: $titleTextColor;
 
   @include font-style(27px, 30px, 700);
 
-  @media screen and (min-width: $tablet-width) {
+  &--inner {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: $titleTextColor;
+  }
+
+  @media screen and (min-width: $mobile-tablet-width) {
     padding: 154px 50px 372px 50px;
 
     @include font-style(43px, 50px, 700);
+
+    &--inner {
+      padding: 100px 50px 0;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
     padding: 157px 50px 355px 50px;
 
     @include font-style(53px, 57px, 700);
+
+    &--inner {
+      padding: 100px 50px 0;
+    }
   }
 }
 
-.promo-main__list {
+.promo__list {
   @media screen and (min-width: $mobile-tablet-width) {
     padding: 0 50px;
   }
 }
 
-.promo-main__sublist {
+.promo__sublist {
   display: none;
 
   @media screen and (min-width: $desktop-width) {
