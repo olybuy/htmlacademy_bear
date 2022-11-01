@@ -1,37 +1,14 @@
 .contacts {
+  position: relative;
+
   @media screen and (min-width: $tablet-width) {
-    text-align: center;
     box-sizing: border-box;
   }
 
   @media screen and (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 293px 457px;
+    grid-template-columns: 299px 527px;
     column-gap: 55px;
-    text-align: left;
-  }
-}
-
-.contacts__title {
-  margin: 0;
-  margin-bottom: 28px;
-  padding: 0 30px;
-  color: $titleTextColor;
-
-  @include font-style(25px, 30px, 700);
-
-  @media screen and (min-width: $tablet-width) {
-    position: relative;
-    padding: 0 50px;
-
-    @include font-style(43px, 50px, 700);
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    @include font-style(53px, 57px, 700);
-
-    padding: 0;
-    margin-bottom: 35px;
   }
 
   &::before {
@@ -48,16 +25,34 @@
     }
 
     @media screen and (min-width: $desktop-width) {
-      left: -64px;
+      left: 63px;
+      top: 62px;
     }
   }
 }
 
-.contacts__button {
-  margin-bottom: 40px;
+.contacts__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0 30px;
+  color: $titleTextColor;
+
+  @include font-style(25px, 30px, 700);
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    padding: 0 50px;
+    padding-top: 22px;
+    margin-bottom: 49px;
+
+    @include font-style(43px, 50px, 700);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include font-style(53px, 57px, 700);
+
+    padding: 0;
+    margin-top: 79px;
+    margin-bottom: 35px;
   }
 }
 
@@ -68,6 +63,10 @@
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 

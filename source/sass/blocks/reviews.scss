@@ -2,10 +2,6 @@
   position: relative;
   padding-bottom: 45px;
 
-  @media screen and (min-width: $desktop-width) {
-    padding-left: 226px;
-  }
-
   &::before {
     @media screen and (min-width: $tablet-width) {
       position: absolute;
@@ -55,7 +51,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-
+    padding-left: 224px;
   }
 }
 
@@ -113,6 +109,10 @@
     z-index: 2;
 
     @include font-style(17px, 30px, 400);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 44px;
   }
 }
 

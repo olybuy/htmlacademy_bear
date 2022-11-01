@@ -6,10 +6,11 @@
   margin-bottom: 62px;
   padding: 0 30px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $mobile-tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 49px 50px;
+    margin-bottom: 49px;
+    padding: 0 50px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -17,6 +18,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 84px;
+    gap: 30px;
   }
 }
 
@@ -33,4 +35,26 @@
 
 .contacts-list__value {
   margin: 0;
+}
+
+.contacts-list__link {
+  position: relative;
+  color: $primaryTextColor;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background-color: $primaryColor;
+    height: 1px;
+    width: 100%;
+    content: "";
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &::after {
+      bottom: -5px;
+    }
+  }
 }

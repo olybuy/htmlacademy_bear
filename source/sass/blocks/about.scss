@@ -97,7 +97,7 @@
 
   @include list-reset;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $mobile-tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
