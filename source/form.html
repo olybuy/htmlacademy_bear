@@ -61,7 +61,7 @@
       </section>
       <section class="main__order order">
         <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="order-form__group">
             <h2 class="order-form__title">Тип</h2>
             <div class="order-form__wrapper">
@@ -77,9 +77,9 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--dark">
             <h2 class="order-form__title">Цвет</h2>
-            <div class="order-form__wrapper">
+            <div class="order-form__wrapper order-form__wrapper--checkbox">
               <label class="order-form__field checkbox-field">
                 <input class="checkbox-field__input" type="checkbox" name="white" checked>
                 <span class="checkbox-field__mark"></span>
@@ -129,17 +129,19 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--dark order-form__group--double">
             <h2 class="order-form__title">Тел</h2>
-            <label class="order-form__field text-field">
-              <input class="text-field__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            </label>
-          </fieldset>
-          <fieldset class="order-form__group">
-            <h2 class="order-form__title">E-mail</h2>
-            <label class="order-form__field text-field">
-              <input class="text-field__input" type="email" placeholder="Ваш Email*" required>
-            </label>
+            <div class="order-form__wrapper">
+              <label class="order-form__field text-field">
+                <input class="text-field__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </label>
+            </div>
+            <h2 class="order-form__title order-form__title--long">E-mail</h2>
+            <div class="order-form__wrapper">
+              <label class="order-form__field text-field">
+                <input class="text-field__input" type="email" placeholder="Ваш Email*" required>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="order-form__group">
             <h2 class="order-form__title">Доп</h2>

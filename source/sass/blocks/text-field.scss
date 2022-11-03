@@ -1,7 +1,22 @@
+.text-field {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: end;
+    flex-grow: 1;
+  }
+}
+
 .text-field__label {
   color: $titleTextColor;
 
   @include font-style(17px, 18px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    padding-right: 25px;
+    padding-bottom: 19px;
+
+    @include font-style(19px, 18px, 700);
+  }
 }
 
 .text-field__input {
@@ -15,5 +30,13 @@
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: inherit;
+
+    @include font-style(19px, 18px, 400);
   }
 }

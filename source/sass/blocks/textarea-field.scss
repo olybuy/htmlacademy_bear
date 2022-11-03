@@ -1,5 +1,11 @@
 .textarea-field {
   padding: 30px 0 17px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-grow: 1;
+    padding: 0;
+    padding-right: 50px;
+  }
 }
 
 .textarea-field__input {

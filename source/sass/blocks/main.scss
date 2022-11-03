@@ -93,3 +93,8 @@
   }
 }
 
+.main__order {
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
