@@ -86,11 +86,13 @@
 }
 
 .reviews__button {
+  width: 260px;
+
   @media screen and (min-width: $tablet-width) {
     grid-area: button;
     margin-bottom: 40px;
     margin-right: 0;
-    min-width: 175px;
+    width: 175px;
     box-sizing: border-box;
 
     @include font-style(17px, 20px, 700);

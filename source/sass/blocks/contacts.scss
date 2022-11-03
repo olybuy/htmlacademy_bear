@@ -70,3 +70,10 @@
   }
 }
 
+.contacts__button {
+  width: 260px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 230px;
+  }
+}

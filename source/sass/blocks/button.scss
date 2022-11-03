@@ -2,7 +2,6 @@
   display: block;
   padding: 14px;
   margin: 0 auto;
-  min-width: 260px;
   background-color: $backgroundColor;
   text-transform: uppercase;
   border: 2px solid $primaryTextColor;
@@ -11,7 +10,12 @@
 
   @include font-style(18px, 20px, 700);
 
-  &--small {
-    min-width: 192px;
+  &--modal {
+    background-color: $primaryColor;
+    color: $secondaryTextColor;
+    padding: 18px;
+    border: none;
+
+    @include font-style(17px, 16px, 700);
   }
 }

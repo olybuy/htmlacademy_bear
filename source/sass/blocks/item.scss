@@ -1,6 +1,15 @@
 .item {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: column;
+    border: 1px solid $borderColor;
+  }
 }
 
 .item__title {
@@ -9,6 +18,12 @@
   color: $titleTextColor;
 
   @include font-style(17px, 24px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 27px;
+
+    @include font-style(20px, 24px, 700);
+  }
 }
 
 .item__specs {
@@ -17,24 +32,73 @@
   border-bottom: 1px solid $borderColor;
 
   @include font-style(13px, 30px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+
+    @include font-style(15px, 30px, 400);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 12.5px;
+  }
 }
 
 .item__price {
+  color: $titleTextColor;
+
   @include font-style(15px, 24px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(17px, 24px, 700);
+  }
 }
 
 .item__wrapper {
   padding: 0 28px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    grid-template-columns: 100%;
+    padding: 0 33px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 28px;
+    height: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .item__image {
+  display: block;
   margin-bottom: 28px;
+  object-fit: cover;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+    height: 100%;
+    min-width: 334px;
+    max-height: 334px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-width: 314px;
+    max-height: 462px;
+  }
 }
 
 .item__button {
   display: flex;
   justify-content: space-between;
   padding: 23px 0 26px;
+
+  @media screen and (min-width: $tablet-width) {
+    border-top: 1px solid $borderColor;
+  }
 }
 
 .item__icon {

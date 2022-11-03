@@ -62,7 +62,15 @@
       <section class="main__catalog catalog">
         <ul class="catalog__list">
           <li class="catalog__item item">
-            <img class="item__image" src="../img/content/photo-1-mobile.jpg" width="260" height="195" alt="Вязаный зайчик в голубом костюме сидит на оранжевом ведерке.">
+            <picture>
+              <source media="(min-width: 1150px)" type="image/webp" srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/content/photo-1-tablet.webp 1x, img/content/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+              <source srcset="img/content/photo-1-mobile.jpg 1x, img/content/photo-1-mobile@2x.jpg 2x">
+              <img class="item__image" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile.jpg 1x, img/content/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный зайчик в голубом костюме сидит на оранжевом ведерке.">
+            </picture>
             <div class="item__wrapper">
               <h2 class="item__title">Зайчик-попрыгайчик</h2>
               <span class="item__specs">Рост 30 см, вес 200 г</span>
@@ -75,7 +83,15 @@
             </div>
           </li>
           <li class="catalog__item item">
-            <img class="item__image" src="../img/content/photo-2-mobile.jpg" width="260" height="195" alt="Вязаная корзинка бело-оранжевого цвета, в которой умещаются три маленьких полотенца.">
+            <picture>
+              <source media="(min-width: 1150px)" type="image/webp" srcset="img/content/photo-2-desktop.webp 1x, img/content/photo-2-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/content/photo-2-tablet.webp 1x, img/content/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-2-mobile.webp 1x, img/content/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
+              <source srcset="img/content/photo-2-mobile.jpg 1x, img/content/photo-2-mobile@2x.jpg 2x">
+              <img class="item__image" src="img/content/photo-2-mobile.jpg" srcset="img/content/photo-2-mobile.jpg 1x, img/content/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзинка бело-оранжевого цвета, в которой умещаются три маленьких полотенца.">
+            </picture>
             <div class="item__wrapper">
               <h2 class="item__title">Корзинка для белья</h2>
               <span class="item__specs">Диаметр 15 см, высота 10 см</span>
@@ -88,7 +104,15 @@
             </div>
           </li>
           <li class="catalog__item item">
-            <img class="item__image" src="../img/content/photo-3-mobile.jpg" width="260" height="195" alt="Большая вязаная корзинка бело-зеленого цвета, в которую умещаются шесть маленьких игрушек.">
+            <picture>
+              <source media="(min-width: 1150px)" type="image/webp" srcset="img/content/photo-3-desktop.webp 1x, img/content/photo-3-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/content/photo-3-tablet.webp 1x, img/content/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-3-mobile.webp 1x, img/content/photo-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
+              <source srcset="img/content/photo-3-mobile.jpg 1x, img/content/photo-3-mobile@2x.jpg 2x">
+              <img class="item__image" src="img/content/photo-3-mobile.jpg" srcset="img/content/photo-3-mobile.jpg 1x, img/content/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Большая вязаная корзинка бело-зеленого цвета, в которую умещаются шесть маленьких игрушек.">
+            </picture>
             <div class="item__wrapper">
               <h2 class="item__title">Большая корзинка для игрушек</h2>
               <span class="item__specs">Диаметр 30 см, высота 30 см</span>
@@ -103,15 +127,23 @@
         </ul>
       </section>
       <section class="main__about-production about-production">
+        <div class="about-production__video">
+          <picture>
+            <source media="(min-width: 1150px)" type="image/webp" srcset="img/content/video-desktop.webp 1x, img/content/video-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/content/video-tablet.webp 1x, img/content/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/video-mobile.webp 1x, img/content/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/content/video-tablet.jpg 1x, img/content/video-tablet@2x.jpg 2x">
+            <source srcset="img/content/video-mobile.jpg 1x, img/content/video-mobile@2x.jpg 2x">
+            <img class="about-production__picture" src="img/content/video-mobile.jpg" srcset="img/content/video-mobile.jpg 1x, img/content/video-mobile@2x.jpg 2x" width="260" height="150" alt="Заглушка для видео">
+          </picture>
+        </div>
         <div class="about-production__title-wrapper">
           <h2 class="about-production__title">Процесс производства</h2>
         </div>
-        <div class="about-production__video">
-          <img src="../img/content/video-mobile.jpg" width="260" height="150"  alt="Заглушка для видео">
-        </div>
         <div class="about-production__wrapper">
           <p class="about-production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="about-production__button button button--small" type="button">Сделать заказ</button>
+          <button class="about-production__button button" type="button">Сделать заказ</button>
         </div>
       </section>
     </main>

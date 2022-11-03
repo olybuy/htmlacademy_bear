@@ -1,12 +1,26 @@
 .catalog {
   padding: 0 30px 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .catalog__list {
   @include list-reset;
+
+  @media screen and (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
+    column-gap: 51px;
+  }
 }
 
 .catalog__item {
   border-bottom: 1px solid $borderColor;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    border-top: 1px solid $borderColor;
+  }
 }
