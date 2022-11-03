@@ -13,6 +13,7 @@
   padding: 17px;
   box-sizing: border-box;
   font-family: "OpenSans", "Arial", sans-serif;
+  border: 2px solid $primaryTextColor;
 
   @include font-style(17px, 18px, 400);
 }

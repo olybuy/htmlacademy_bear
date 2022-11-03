@@ -6,67 +6,6 @@
   }
 }
 
-.order-form__group {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 0;
-
-    &--dark {
-      background-color: $backgroundSecondaryColor;
-    }
-
-    &--double {
-      display: grid;
-      grid-template-columns: 217px 1fr;
-      align-items: center;
-    }
-  }
-}
-
-.order-form__title {
-  position: relative;
-  display: block;
-  margin: 0;
-  color: $primaryColor;
-  text-transform: uppercase;
-
-  @include font-style(17px, 16px, 700);
-
-  &::before {
-    position: absolute;
-    top: 8px;
-    height: 1px;
-    width: calc(100% - 60px);
-    margin-left: 60px;
-    background-color: $primaryColor;
-    display: block;
-    content: "";
-  }
-
-  &--long {
-    &::before {
-      margin-left: 78px;
-      width: calc(100% - 78px);
-    }
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    width: 167px;
-    padding-left: 50px;
-
-    &::before {
-      display: none;
-    }
-  }
-}
-
 .order-form__note {
   display: block;
   margin-bottom: 30px;
@@ -74,22 +13,3 @@
   @include font-style(14px, 16px, 400);
 }
 
-.order-form__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-
-  @media screen and (min-width: $tablet-width) {
-    flex-grow: 1;
-    padding: 0;
-    padding-right: 50px;
-  }
-
-  &--checkbox {
-    @media screen and (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 85px;
-    }
-  }
-}

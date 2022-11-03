@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/form-group.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/order-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/order-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/text-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/text-field.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/textarea-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/textarea-field.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1664358566053" duration="2163000" />
       <workItem from="1664360766353" duration="2150000" />
       <workItem from="1664362927654" duration="110275000" />
-      <workItem from="1665681248849" duration="42640000" />
+      <workItem from="1665681248849" duration="44248000" />
     </task>
     <task id="LOCAL-00001" summary="Settings">
       <created>1664362532742</created>
@@ -290,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667458116032</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Before change form">
+      <created>1667471245443</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1667471245443</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +315,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Setting" />
     <MESSAGE value="Index structure" />
     <MESSAGE value="Catalog structure" />
     <MESSAGE value="Form structure" />
@@ -334,7 +339,8 @@
     <MESSAGE value="Before new changes promo" />
     <MESSAGE value="Finally finished promo" />
     <MESSAGE value="Before pixelperfect catalog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Before pixelperfect catalog" />
+    <MESSAGE value="Before change form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before change form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="615" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1667286306431">
@@ -353,10 +359,10 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1667458119296">
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1667471247179">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1667458119296" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1667471247179" />
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1664363585212">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
