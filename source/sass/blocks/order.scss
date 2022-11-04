@@ -4,4 +4,8 @@
   padding: 17px 30px 29px;
 
   @include font-style(13px, 24px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(17px, 30px, 400);
+  }
 }

@@ -77,9 +77,9 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group form-group form-group--dark">
+          <fieldset class="order-form__group form-group">
             <h2 class="form-group__title">Цвет</h2>
-            <div class="form-group__wrapper form-group__wrapper--checkbox">
+            <div class="form-group__wrapper form-group__wrapper--column">
               <label class="form-group__field checkbox-field">
                 <input class="checkbox-field__input" type="checkbox" name="white" checked>
                 <span class="checkbox-field__mark"></span>
@@ -129,28 +129,38 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group form-group form-group--dark form-group--double">
+          <fieldset class="order-form__group form-group form-group--double">
             <h2 class="form-group__title">Тел</h2>
             <div class="form-group__wrapper">
               <label class="form-group__field text-field">
                 <input class="text-field__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <span class="visually-hidden">Иконка трубки</span>
+                <svg class="text-field__icon" width="25" height="24" aria-hidden="true">
+                  <use href="img/sprite.svg#phone"></use>
+                </svg>
               </label>
             </div>
             <h2 class="form-group__title form-group__title--long">E-mail</h2>
             <div class="form-group__wrapper">
               <label class="form-group__field text-field">
                 <input class="text-field__input" type="email" placeholder="Ваш Email*" required>
+                <span class="visually-hidden">Иконка письма</span>
+                <svg class="text-field__icon" width="32" height="21" aria-hidden="true">
+                  <use href="img/sprite.svg#mail"></use>
+                </svg>
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group form-group form-group--textarea">
+          <fieldset class="order-form__group form-group">
             <h2 class="form-group__title">Доп</h2>
             <label class="form-group__field textarea-field">
               <textarea class="textarea-field__input" rows="6" name="additional info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </fieldset>
-          <span class="order-form__note">*Поля обязательны для заполнения</span>
-          <button class="order-form__button button" type="submit">Отправить заказ</button>
+          <div class="order-form__button-wrapper">
+            <span class="order-form__note">*Поля обязательны для заполнения</span>
+            <button class="order-form__button button" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>

@@ -11,5 +11,38 @@
   margin-bottom: 30px;
 
   @include font-style(14px, 16px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    order: 1;
+    align-self: center;
+    margin-bottom: 0;
+
+    @include font-style(17px, 30px, 400);
+  }
 }
 
+.order-form__button-wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 225px 0 217px;
+  }
+}
+
+.order-form__button {
+  @media screen and (min-width: $tablet-width) {
+    order: 0;
+    margin-left: 0;
+  }
+}
+
+.order-form__group {
+  @media screen and (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
+}
