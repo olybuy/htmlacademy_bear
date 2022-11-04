@@ -12,4 +12,12 @@
   color: $titleTextColor;
 
   @include font-style(15px, 24px, 700);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

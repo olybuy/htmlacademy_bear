@@ -18,6 +18,14 @@
 }
 
 .product-nav__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media screen and (min-width: $tablet-width) {
     padding: 20px;
   }

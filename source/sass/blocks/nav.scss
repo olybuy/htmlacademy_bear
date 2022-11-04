@@ -12,9 +12,25 @@
 
   &:first-child {
     border-top: 1px solid $borderColor;
+  }
 
-    @media screen and (min-width: $tablet-width) {
-      border: none;
+  &:hover {
+    .nav__icon {
+      color: $primaryColor;
+      opacity: 1;
+    }
+    .nav__note {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .nav__icon {
+      color: $primaryColor;
+      opacity: 0.3;
+    }
+    .nav__note {
+      opacity: 0.3;
     }
   }
 
@@ -22,6 +38,10 @@
     display: flex;
     border: none;
     padding: 36px 32px 34px;
+
+    &:first-child {
+      border: none;
+    }
   }
 
   &--cart {

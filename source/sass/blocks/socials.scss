@@ -14,3 +14,22 @@
 
   @include list-reset;
 }
+
+.socials__icon {
+  color: $socialsColor;
+}
+
+.socials__link {
+  width: 100px;
+
+  &:hover {
+    .socials__icon {
+      color: $primaryColor;
+    }
+  }
+  &:active {
+    .socials__icon {
+      opacity: 0.3;
+    }
+  }
+}
