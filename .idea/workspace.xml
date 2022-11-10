@@ -21,14 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/icons/mail.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/icons/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/icons/phone.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/about-production.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/about-production.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/checkbox-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/checkbox-field.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/radio-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/radio-field.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/text-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/text-field.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/textarea-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/textarea-field.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/catalog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/catalog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       <workItem from="1664360766353" duration="2150000" />
       <workItem from="1664362927654" duration="110275000" />
       <workItem from="1665681248849" duration="49870000" />
-      <workItem from="1667489413118" duration="19248000" />
+      <workItem from="1667489413118" duration="24181000" />
     </task>
     <task id="LOCAL-00001" summary="Settings">
       <created>1664362532742</created>
@@ -329,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668068644451</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Finish of hovers">
+      <created>1668078068883</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668078068883</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +352,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fonts" />
     <MESSAGE value="Blocks" />
     <MESSAGE value="Index" />
     <MESSAGE value="Index fixes" />
@@ -373,7 +376,8 @@
     <MESSAGE value="Middle result form" />
     <MESSAGE value="Finish form" />
     <MESSAGE value="Part of hovers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part of hovers" />
+    <MESSAGE value="Finish of hovers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish of hovers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="615" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1667286306431">
@@ -392,17 +396,21 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1668068645757">
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1668078070861">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1668068645757" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1668078070861" />
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1664363585212">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1440.791@0.25.1440.791" timestamp="1664363585212" />
-    <state x="488" y="147" width="597" height="548" key="find.popup" timestamp="1667224463709">
+    <state x="488" y="147" width="597" height="548" key="find.popup" timestamp="1668092571464">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="488" y="147" width="597" height="548" key="find.popup/0.25.1440.791@0.25.1440.791" timestamp="1667224463709" />
+    <state x="488" y="147" width="597" height="548" key="find.popup/0.25.1440.791@0.25.1440.791" timestamp="1668092571464" />
+    <state x="385" y="140" width="670" height="676" key="search.everywhere.popup" timestamp="1668093161597">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="385" y="140" width="670" height="676" key="search.everywhere.popup/0.25.1440.791@0.25.1440.791" timestamp="1668093161597" />
   </component>
 </project>

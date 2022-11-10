@@ -98,3 +98,15 @@
     margin-bottom: 50px;
   }
 }
+
+.main__catalog {
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.main__about-production {
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
