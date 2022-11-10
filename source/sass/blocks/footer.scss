@@ -10,6 +10,22 @@
   }
 }
 
+.footer__logo {
+  color: $logoColor;
+
+  &:hover {
+    .footer__logo-image {
+      color: $primaryColor;
+    }
+  }
+
+  &:active {
+    .footer__logo-image {
+      opacity: 0.3;
+    }
+  }
+}
+
 .footer__logo-image {
   display: none;
 

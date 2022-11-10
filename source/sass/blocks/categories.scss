@@ -2,7 +2,8 @@
   @include list-reset;
 
   @media screen and (min-width: $mobile-tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -10,7 +11,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-content: center;
-  padding: 30px;
+  padding: 10px 30px;
+  min-height: 103px;
   background-color: $primaryColor;
   box-sizing: border-box;
 
@@ -20,28 +22,12 @@
     background-color: $secondaryColor;
   }
 
-  &--interior {
-    padding: 23px 36px 18px 30px;
-
-    @media screen and (min-width: $mobile-tablet-width) {
-      padding-bottom: 18+24px;
-    }
-  }
-
   &--interior::after {
     display: block;
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
     content: "";
-  }
-
-  &--toy {
-    padding: 21px 30px 22px;
-
-    @media screen and (min-width: $mobile-tablet-width) {
-      padding-bottom: 22+24px;
-    }
   }
 
   &--toy::after {
@@ -59,8 +45,27 @@
 
   @media screen and (min-width: $mobile-tablet-width) {
     width: 100%;
+    min-height: 130px;
+    align-content: start;
+    padding-top: 30px;
+    padding-bottom: 34px;
 
     @include font-style(20px, 30px, 700);
+  }
+
+  @media screen and (min-width: $tablet-desktop-width) {
+    min-height: 135px;
+    padding-bottom: 43px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }
 

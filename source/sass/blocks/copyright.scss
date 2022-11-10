@@ -23,4 +23,21 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+
+  &:hover {
+    .copyright__logo {
+      color: $hoverColor;
+    }
+  }
+
+  &:active {
+    .copyright__logo {
+      color: $hoverColor;
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__logo {
+  color: $primaryColor;
 }

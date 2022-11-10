@@ -70,7 +70,19 @@
     width: 102px;
     height: 78px;
     background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     content: "";
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &::after {
+      &:hover {
+        width: 121%;
+        height: 92px;
+      }
+    }
   }
 }
 

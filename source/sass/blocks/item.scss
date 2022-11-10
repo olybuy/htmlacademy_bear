@@ -9,6 +9,26 @@
   @media screen and (min-width: $desktop-width) {
     flex-direction: column;
     border: 1px solid $borderColor;
+
+    &:hover {
+      .item__wrapper {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .item__title {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      .item__wrapper {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .item__title {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -95,9 +115,25 @@
   display: flex;
   justify-content: space-between;
   padding: 23px 0 26px;
+  text-decoration: none;
 
   @media screen and (min-width: $tablet-width) {
     border-top: 1px solid $borderColor;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &:hover {
+      .item__icon {
+        color: $primaryColor;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      .item__icon {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
