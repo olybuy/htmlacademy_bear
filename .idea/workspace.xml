@@ -22,16 +22,13 @@
     <list default="true" id="f67b8341-958e-4998-98fe-97ab4d26703e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/icons/htmlacademy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/icons/htmlacademy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/mishka-logo-mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/mishka-logo-mobile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/icons/mail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/icons/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/icons/phone.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/about-production.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/about-production.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/copyright.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/copyright.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/varibales/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/varibales/colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/checkbox-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/checkbox-field.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/radio-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/radio-field.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/text-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/text-field.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/textarea-field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/textarea-field.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <workItem from="1664360766353" duration="2150000" />
       <workItem from="1664362927654" duration="110275000" />
       <workItem from="1665681248849" duration="49870000" />
-      <workItem from="1667489413118" duration="15358000" />
+      <workItem from="1667489413118" duration="19248000" />
     </task>
     <task id="LOCAL-00001" summary="Settings">
       <created>1664362532742</created>
@@ -325,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667561916334</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Part of hovers">
+      <created>1668068644451</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1668068644451</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,10 +392,10 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="649" y="134" key="Github.UntrackedFilesDialog/0.25.1440.791@0.25.1440.791" timestamp="1664361769082" />
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1667561917505">
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2" timestamp="1668068645757">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
-    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1667561917505" />
+    <state x="464" y="162" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1668068645757" />
     <state x="644" y="158" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1664363585212">
       <screen x="0" y="25" width="1440" height="791" />
     </state>

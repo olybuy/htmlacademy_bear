@@ -45,10 +45,27 @@
       padding-left: 17px;
     }
   }
+
+  @media screen and (min-width: $desktop-width) {
+    &:hover, &:focus, &:active {
+      border-bottom-color: $primaryColor;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.text-field__input:hover ~ .text-field__icon,
+.text-field__input:focus ~ .text-field__icon {
+  color: $primaryColor;
+  opacity: 1;
 }
 
 .text-field__icon {
   position: absolute;
   top: 13px;
   right: 8px;
+  opacity: 0.2;
 }

@@ -16,6 +16,16 @@
   border: 2px solid $primaryTextColor;
 
   @include font-style(17px, 18px, 400);
+
+  @media screen and (min-width: $desktop-width) {
+    &:hover, &:focus {
+      border-color: $primaryColor;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
 }
 
 .textarea-field__input::placeholder {
