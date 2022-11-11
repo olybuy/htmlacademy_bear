@@ -20,4 +20,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
 }

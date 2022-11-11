@@ -1,0 +1,61 @@
+.promo-main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  min-height: 489px;
+  background-image: url("../img/bg/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: $backgroundPromo;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url("../img/bg/hero-mobile@2x.jpg");
+  }
+
+  @media screen and (min-width: $mobile-tablet-width) {
+    background-image: url("../img/bg/hero-tablet.jpg");
+    background-position: top;
+    min-height: 758px;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../img/bg/hero-tablet@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $tablet-desktop-width) {
+    background-image: url("../img/bg/hero-desktop.jpg");
+    background-size: 1150px;
+    background-color: $backgroundPromo;
+    min-height: 763px;
+    justify-content: space-between;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../img/bg/hero-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo-main__title {
+  padding: 73px 30px 20px;
+
+  @media screen and (min-width: $mobile-tablet-width) {
+    padding: 154px 50px;
+  }
+
+  @media screen and (min-width: $tablet-desktop-width) {
+    padding-top: 158px;
+  }
+}
+
+.promo-main__list {
+  align-self: end;
+
+  @media screen and (min-width: $mobile-tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include fixed-width;
+  }
+}

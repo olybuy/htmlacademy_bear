@@ -10,10 +10,6 @@
     flex-direction: row;
     padding: 50px 0;
 
-    &:nth-child(even) {
-      background-color: $backgroundSecondaryColor;
-    }
-
     &--double {
       display: grid;
       grid-template-columns: 217px 1fr;

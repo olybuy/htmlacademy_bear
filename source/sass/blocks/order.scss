@@ -8,4 +8,10 @@
   @media screen and (min-width: $tablet-width) {
     @include font-style(17px, 30px, 400);
   }
+
+  @media screen and (min-width: $desktop-width) {
+    @include fixed-width;
+
+    padding: 17px 0 29px;
+  }
 }

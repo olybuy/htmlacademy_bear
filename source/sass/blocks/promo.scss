@@ -6,29 +6,9 @@
   min-height: 177px;
   background-color: $backgroundSecondaryColor;
 
-  &--main {
-    justify-content: space-between;
-    text-align: center;
-    background-image: url("../img/bg/hero-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-  }
-
-  @media screen and (min-resolution: 2dppx) {
-    &--main {
-      background-image: url("../img/bg/hero-mobile@2x.jpg");
-    }
-  }
-
   @media screen and (min-width: $mobile-tablet-width) {
     justify-content: start;
     min-height: 238px;
-
-    &--main {
-      background-image: url("../img/bg/hero-tablet.jpg");
-      background-position: top;
-    }
 
     &::after {
       position: absolute;
@@ -39,24 +19,6 @@
       background-repeat: repeat-x;
       z-index: 4;
       content: "";
-    }
-
-    @media screen and (min-resolution: 2dppx) {
-      &--main {
-        background-image: url("../img/bg/hero-tablet@2x.jpg");
-      }
-    }
-  }
-
-  @media screen and (min-width: $tablet-desktop-width) {
-    &--main {
-      background-image: url("../img/bg/hero-desktop.jpg");
-    }
-
-    @media screen and (min-resolution: 2dppx) {
-      &--main {
-        background-image: url("../img/bg/hero-desktop@2x.jpg");
-      }
     }
   }
 }
@@ -70,34 +32,17 @@
 
   @include font-style(27px, 30px, 700);
 
-  &--main {
-    padding: 73px 30px 120px;
-  }
-
   @media screen and (min-width: $mobile-tablet-width) {
     padding: 100px 50px 0;
 
     @include font-style(43px, 50px, 700);
-
-    &--main {
-      padding: 154px 50px 372px 50px;
-    }
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 100px 50px 0;
+    padding: 57px 50px 0;
 
     @include font-style(53px, 57px, 700);
-
-    &--main {
-      padding: 157px 50px 355px 50px;
-    }
-  }
-}
-
-.promo__list {
-  @media screen and (min-width: $mobile-tablet-width) {
-    padding: 0 50px;
+    @include fixed-width;
   }
 }
 
@@ -105,9 +50,17 @@
   display: none;
 
   @media screen and (min-width: $desktop-width) {
-    position: absolute;
-    top: 19px;
-    left: 27.5px;
+    display: block;
   }
 }
 
+.promo__wrapper {
+  @media screen and (min-width: $desktop-width) {
+    order: -1;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 19px;
+
+    @include fixed-width;
+  }
+}

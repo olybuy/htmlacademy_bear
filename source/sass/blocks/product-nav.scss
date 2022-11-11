@@ -29,4 +29,10 @@
   @media screen and (min-width: $tablet-width) {
     padding: 20px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
 }

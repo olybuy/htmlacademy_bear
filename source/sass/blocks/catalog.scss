@@ -9,15 +9,17 @@
 .catalog__list {
   @include list-reset;
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $tablet-desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 316px);
+    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
     column-gap: 51px;
+    row-gap: 50px;
   }
 }
 
 .catalog__item {
   border-bottom: 1px solid $borderColor;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {

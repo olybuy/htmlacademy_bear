@@ -1,12 +1,14 @@
 .item {
   display: flex;
   flex-direction: column;
+  width: min-content;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $mobile-tablet-width) {
     flex-direction: row;
+    width: 100%;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $tablet-desktop-width) {
     flex-direction: column;
 
     &:hover {
@@ -38,7 +40,7 @@
 
   @include font-style(17px, 24px, 700);
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $mobile-tablet-width) {
     padding-top: 27px;
 
     @include font-style(20px, 24px, 700);

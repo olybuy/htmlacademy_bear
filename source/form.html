@@ -49,7 +49,8 @@
     <main class="main__container">
       <section class="main__promo promo">
         <h1 class="promo__title">Вязание на заказ</h1>
-        <ul class="promo__sublist promo-sublist">
+        <div class="promo__wrapper">
+          <ul class="promo__sublist promo-sublist">
           <li class="promo-sublist__item">
             <a class="promo-sublist__link" href="#">Новые поступления</a>
           </li>
@@ -57,27 +58,31 @@
             <a class="promo-sublist__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <span class="promo__note promo-note">Бесплатная доставка по России</span>
+          <span class="promo__note promo-note">Бесплатная доставка по России</span>
+        </div>
       </section>
       <section class="main__order order">
         <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="order-form__group form-group">
-            <h2 class="form-group__title">Тип</h2>
-            <div class="form-group__wrapper">
-              <label class="form-group__field radio-field">
-                <input class="radio-field__input" type="radio" name="type" value="accessory" checked>
-                <span class="radio-field__mark"></span>
-                <span class="radio-field__label">Аксессуар для интерьера</span>
-              </label>
-              <label class="form-group__field radio-field">
-                <input class="radio-field__input" type="radio" name="type" value="kids">
-                <span class="radio-field__mark"></span>
-                <span class="radio-field__label">Детская игрушка</span>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="order-form__group form-group">
+          <div class="order-form__wrapper">
+            <fieldset class="order-form__group form-group">
+              <h2 class="form-group__title">Тип</h2>
+              <div class="form-group__wrapper">
+                <label class="form-group__field radio-field">
+                  <input class="radio-field__input" type="radio" name="type" value="accessory" checked>
+                  <span class="radio-field__mark"></span>
+                  <span class="radio-field__label">Аксессуар для интерьера</span>
+                </label>
+                <label class="form-group__field radio-field">
+                  <input class="radio-field__input" type="radio" name="type" value="kids">
+                  <span class="radio-field__mark"></span>
+                  <span class="radio-field__label">Детская игрушка</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="order-form__wrapper">
+            <fieldset class="order-form__group form-group">
             <h2 class="form-group__title">Цвет</h2>
             <div class="form-group__wrapper form-group__wrapper--column">
               <label class="form-group__field checkbox-field">
@@ -112,7 +117,9 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group form-group">
+          </div>
+          <div class="order-form__wrapper">
+            <fieldset class="order-form__group form-group">
             <h2 class="form-group__title">ФИО</h2>
             <div class="form-group__wrapper">
               <label class="form-group__field text-field">
@@ -129,7 +136,9 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group form-group form-group--double">
+          </div>
+          <div class="order-form__wrapper">
+            <fieldset class="order-form__group form-group form-group--double">
             <h2 class="form-group__title">Тел</h2>
             <div class="form-group__wrapper">
               <label class="form-group__field text-field">
@@ -151,12 +160,15 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="order-form__group form-group">
+          </div>
+          <div class="order-form__wrapper">
+            <fieldset class="order-form__group form-group">
             <h2 class="form-group__title">Доп</h2>
             <label class="form-group__field textarea-field">
               <textarea class="textarea-field__input" rows="6" name="additional info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </fieldset>
+          </div>
           <div class="order-form__button-wrapper">
             <span class="order-form__note">*Поля обязательны для заполнения</span>
             <button class="order-form__button button" type="submit"><span class="button__text">Отправить заказ</span></button>
