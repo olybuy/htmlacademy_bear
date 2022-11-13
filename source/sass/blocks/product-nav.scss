@@ -4,7 +4,7 @@
     left: 50px;
     top: 89px;
     display: flex;
-    z-index: 2;
+    z-index: 0;
 
     @include font-style(15px, 24px, 700);
   }

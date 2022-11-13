@@ -23,7 +23,7 @@
               <a class="product-nav__link nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="product-nav__item nav__item">
-              <a class="product-nav__link nav__link" href="#">Вязание на заказ</a>
+              <a class="product-nav__link nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="user-nav nav__list">
@@ -36,7 +36,7 @@
               </a>
             </li>
             <li class="user-nav__item nav__item">
-              <a class="user-nav__link nav__link nav__link--cart" href="form.html">
+              <a class="user-nav__link nav__link nav__link--cart">
                 <svg class="nav__icon" width="21" height="18" aria-hidden="true">
                   <use href="img/sprite.svg#cart"></use>
                 </svg>
@@ -52,20 +52,20 @@
         <div class="promo__wrapper">
           <ul class="promo__sublist promo-sublist">
             <li class="promo-sublist__item">
-              <a class="promo-sublist__link" href="#">Новые поступления</a>
+              <a class="promo-sublist__link">Новые поступления</a>
             </li>
             <li class="promo-sublist__item">
-              <a class="promo-sublist__link" href="#">Распродажа</a>
+              <a class="promo-sublist__link">Распродажа</a>
             </li>
           </ul>
           <span class="promo__note promo-note">Бесплатная доставка по России</span>
         </div>
         <ul class="promo-main__list categories">
           <li class="categories__item categories__item--interior">
-            <a class="categories__link" href="">Предметы<br/> интерьера</a>
+            <a class="categories__link">Предметы<br/> интерьера</a>
           </li>
           <li class="categories__item categories__item--toy categories__item--dark">
-            <a class="categories__link" href="">Детские<br/> игрушки
+            <a class="categories__link">Детские<br/> игрушки
             </a>
           </li>
         </ul>
@@ -120,19 +120,39 @@
       <section class="main__reviews reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-            у популярных инстамамочек.
-            В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-            и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <span class="reviews__author">
-          Анастасия Красильникова
-          <span class="reviews__author-link">@misssssiskras</span>
-        </span>
+          <div class="reviews__review">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+              у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <span class="reviews__author">
+              Анастасия Красильникова
+              <span class="reviews__author-link">@misssssiskras</span>
+            </span>
+          </div>
+          <div class="reviews__review hide">
+            <p class="reviews__text">Телефон неплохой, но особой разницы с предыдущей моделью -13, не увидела.
+              Есть Е-сим, батарея хорошая, камера тоже неплохая. Но какой то разницы кроме цены не вижу.
+              </p>
+            <span class="reviews__author">
+              Иван Иванов
+              <span class="reviews__author-link">@ivanivanov</span>
+            </span>
+          </div>
+          <div class="reviews__review hide">
+            <p class="reviews__text">Just played around with BrowserStack:
+              Quite cool, instant access to a browser in a VM with dev tools.
+            </p>
+            <span class="reviews__author">
+              Steve Bruce
+              <span class="reviews__author-link">@ivanivanov</span>
+            </span>
+          </div>
           <div class="reviews__slider slider-arrows">
             <span class="visually-hidden">Листать назад</span>
-            <button class="slider-arrows__arrow slider-arrows__left" type="button"></button>
+            <button class="arrow arrow--left arrow--disabled" disabled="disabled" type="button"></button>
             <span class="visually-hidden">Листать вперед</span>
-            <button class="slider-arrows__arrow slider-arrows__right" type="button"></button>
+            <button class="arrow arrow--right" type="button"></button>
           </div>
           <button class="reviews__button button" type="button"><span class="button__text">Написать</span></button>
         </div>
@@ -207,6 +227,21 @@
         </a>
       </div>
     </footer>
+    <div class="modal modal--closed">
+      <div class="modal__container">
+        <button class="modal__toggle">x</button>
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <div class="modal__size-wrapper">
+          <button class="modal__size-button" type="submit">S</button>
+          <button class="modal__size-button" type="submit">M</button>
+          <button class="modal__size-button" type="submit">L</button>
+        </div>
+        <button class="modal__add-button button button--modal" type="submit">Добавить</button>
+      </div>
+    </div>
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

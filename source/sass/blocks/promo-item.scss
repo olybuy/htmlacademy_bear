@@ -17,7 +17,7 @@
     width: 100%;
     background-image: url("../img/zigzag-line-mobile.svg");
     background-repeat: repeat-x;
-    z-index: 4;
+    z-index: 0;
     content: "";
 
     @media screen and (min-width: $tablet-width) {
@@ -27,7 +27,7 @@
       width: 100%;
       background-image: url("../img/zigzag-line.svg");
       background-repeat: repeat-x;
-      z-index: 4;
+      z-index: 0;
       content: "";
     }
   }

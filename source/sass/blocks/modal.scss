@@ -1,0 +1,106 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($backgroundColor, 0.9);
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__container {
+  position: relative;
+  max-width: 320px;
+  margin: auto;
+  padding: 28px 30px 46px;
+  background-color: $backgroundColor;
+  border: 1px solid $modalBorderColor;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 5;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 566px;
+    padding: 37px 93px 46px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  color: $titleTextColor;
+
+  @include font-style(25px, 30px, 700);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(30px, 57px, 700);
+  }
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @include font-style(15px, 30px, 400);
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-style(17px, 30px, 400);
+  }
+}
+
+.modal__size-wrapper {
+  margin-bottom: 31px;
+}
+
+.modal__size-button {
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba($buttonBorderColor, 0.1);
+  background-color: $backgroundColor;
+
+  @include font-style(17px, 16px, 700);
+
+  &:hover {
+    border-color: rgba($buttonBorderColor, 0.3);
+  }
+
+  &:active, &:focus {
+    border-color: rgba($primaryColor, 1);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 112px;
+    cursor: pointer;
+  }
+}
+
+.modal__add-button {
+  width: 100%;
+}
+
+.modal__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: $backgroundColor;
+  border: none;
+  cursor: pointer;
+
+  @include font-style(30px, 30px, 400);
+
+  &:hover {
+    color: $primaryColor;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

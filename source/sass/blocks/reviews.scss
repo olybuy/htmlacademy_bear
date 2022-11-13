@@ -21,7 +21,7 @@
     width: 100%;
     background-image: url("../img/zigzag-line-mobile.svg");
     background-repeat: repeat-x;
-    z-index: 4;
+    z-index: 0;
     content: "";
 
     @media screen and (min-width: $tablet-width) {
@@ -31,7 +31,7 @@
       width: 100%;
       background-image: url("../img/zigzag-line.svg");
       background-repeat: repeat-x;
-      z-index: 4;
+      z-index: 0;
       content: "";
     }
   }
@@ -44,14 +44,22 @@
     display: grid;
     grid-template:
     "title title button" min-content
-    "review review review" min-content
-    "author author arrows" min-content;
+    "review review review" min-content;
     padding: 79px 50px 132px;
     box-sizing: border-box;
   }
 
   @media screen and (min-width: $desktop-width) {
     padding-left: 224px;
+  }
+}
+
+.reviews__review {
+  @media screen and (min-width: $tablet-width) {
+    grid-area: review;
+    min-height: 191px;
+    z-index: 0;
+    transition-delay: 2s;
   }
 }
 
@@ -65,7 +73,7 @@
   @media screen and (min-width: $tablet-width) {
     grid-area: title;
     margin-bottom: 0;
-    z-index: 2;
+    z-index: 0;
 
     @include font-style(43px, 50px, 700);
   }
@@ -79,9 +87,11 @@
   margin: 30px 0 38px;
 
   @media screen and (min-width: $tablet-width) {
+    grid-area: review;
     margin: 0;
     width: 178px;
     justify-self: end;
+    align-self: end;
   }
 }
 
@@ -108,7 +118,7 @@
   @media screen and (min-width: $tablet-width) {
     grid-area: review;
     margin-bottom: 61px;
-    z-index: 2;
+    z-index: 0;
 
     @include font-style(17px, 30px, 400);
   }
@@ -128,7 +138,7 @@
   @media screen and (min-width: $tablet-width) {
     grid-area: author;
     margin-bottom: 0;
-    z-index: 2;
+    z-index: 0;
   }
 }
 

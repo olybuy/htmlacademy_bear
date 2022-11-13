@@ -7,41 +7,7 @@
 
   @media screen and (min-width: $tablet-width) {
     border: none;
-  }
-}
-
-.slider-arrows__arrow {
-  background-color: $backgroundColor;
-  border: none;
-  width: 50px;
-  height: 26px;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.6;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.slider-arrows__left {
-  background-image: url("../img/arrow-left.svg");
-  margin-left: 38px;
-
-  @media screen and (min-width: $tablet-width) {
-    margin-left: 19px;
-  }
-}
-
-.slider-arrows__right {
-  background-image: url("../img/arrow-right.svg");
-  margin-right: 42px;
-
-  @media screen and (min-width: $tablet-width) {
-    margin-right: 19px;
+    z-index: 0;
   }
 }
 

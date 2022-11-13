@@ -20,10 +20,10 @@
       <div class="main-nav__list nav">
         <ul class="product-nav nav__list">
           <li class="product-nav__item nav__item">
-            <a class="product-nav__link nav__link" href="#">Каталог товаров</a>
+            <a class="product-nav__link nav__link">Каталог товаров</a>
           </li>
           <li class="product-nav__item nav__item">
-            <a class="product-nav__link nav__link" href="#">Вязание на заказ</a>
+            <a class="product-nav__link nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="user-nav nav__list">
@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="user-nav__item nav__item">
-            <a class="user-nav__link nav__link nav__link--cart" href="form.html">
+            <a class="user-nav__link nav__link nav__link--cart">
               <svg class="nav__icon" width="21" height="18" aria-hidden="true">
                 <use href="img/sprite.svg#cart"></use>
               </svg>
@@ -52,10 +52,10 @@
         <div class="promo__wrapper">
           <ul class="promo__sublist promo-sublist">
           <li class="promo-sublist__item">
-            <a class="promo-sublist__link" href="#">Новые поступления</a>
+            <a class="promo-sublist__link">Новые поступления</a>
           </li>
           <li class="promo-sublist__item">
-            <a class="promo-sublist__link" href="#">Распродажа</a>
+            <a class="promo-sublist__link">Распродажа</a>
           </li>
         </ul>
           <span class="promo__note promo-note">Бесплатная доставка по России</span>
@@ -146,7 +146,7 @@
         </div>
         <div class="about-production__wrapper">
           <p class="about-production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="about-production__button button" type="button"><span class="button__text">Сделать заказ</span></button>
+          <a class="about-production__button button" href="form.html"><span class="button__text">Сделать заказ</span></a>
         </div>
       </section>
     </main>
@@ -202,6 +202,20 @@
         </a>
       </div>
     </footer>
+    <div class="modal modal--closed">
+      <div class="modal__container">
+        <button class="modal__toggle">x</button>
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <div class="modal__size-wrapper">
+          <button class="modal__size-button" type="submit">S</button>
+          <button class="modal__size-button" type="submit">M</button>
+          <button class="modal__size-button" type="submit">L</button>
+        </div>
+        <button class="modal__add-button button button--modal" type="submit">Добавить</button>
+      </div>
+    </div>
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
