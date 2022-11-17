@@ -47,5 +47,10 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "bxslider": "^4.2.14",
+    "flickity": "^3.0.0",
+    "jquery": "^3.6.1"
+  }
 }

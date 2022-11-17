@@ -1,3 +1,6 @@
+$paddingRight: 225px;
+$paddingLeft: 110px;
+
 .order-form {
   padding: 0 30px 55px;
 
@@ -38,7 +41,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 0 137px 0 130px;
+    padding-right: $paddingRight;
+    padding-left: $paddingLeft;
     box-sizing: border-box;
 
     @include fixed-width;
@@ -50,11 +54,16 @@
     order: 0;
     margin-left: 0;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 115px;
+  }
 }
 
 .order-form__group {
   @media screen and (min-width: $desktop-width) {
-    padding-right: 175px;
+    padding-right: $paddingRight;
+    padding-left: $paddingLeft;
     box-sizing: border-box;
 
     @include fixed-width;

@@ -6,6 +6,10 @@
     padding: 0;
     padding-right: 50px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .textarea-field__input {
