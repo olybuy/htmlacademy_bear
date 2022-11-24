@@ -3,53 +3,33 @@ let arrowRight = document.querySelector('.arrow--right');
 let arrowLeft = document.querySelector('.arrow--left');
 let reviewsArr = Array.from(reviews);
 
-
 arrowRight.addEventListener('click', function () {
-  let currentReview;
-
-  for (let item of reviewsArr) {
-    if (!item.classList.contains('hide')) {
-      currentReview = item;
+  for (let i = 0; i <= reviewsArr.length; i++) {
+    if (!reviewsArr[i].classList.contains('hide')) {
+      if (i === reviewsArr.length - 1) {
+        reviewsArr[i].classList.add('hide');
+        reviewsArr[0].classList.remove('hide');
+      } else {
+        reviewsArr[i].classList.add('hide');
+        reviewsArr[i+1].classList.remove('hide');
+      }
+      break;
     }
-  }
-  if (reviewsArr.indexOf(currentReview) >= 0) {
-    arrowLeft.classList.remove('arrow--disabled');
-    arrowLeft.removeAttribute('disabled');
-  }
-  if (reviewsArr.indexOf(currentReview) === reviewsArr.length-2) {
-    currentReview.classList.add('hide');
-    currentReview.nextSibling.classList.remove('hide');
-    arrowRight.classList.add('arrow--disabled');
-    arrowRight.setAttribute('disabled', 'disabled');
-  }
-  else {
-    currentReview.classList.add('hide');
-    currentReview.nextSibling.classList.remove('hide');
   }
 })
 
 arrowLeft.addEventListener('click', function () {
-  let currentReview;
-
-  for (let item of reviewsArr) {
-    if (!item.classList.contains('hide')) {
-      currentReview = item;
+  for (let i = 0; i <= reviewsArr.length; i++) {
+    if (!reviewsArr[i].classList.contains('hide')) {
+      if (i === 0) {
+        reviewsArr[i].classList.add('hide');
+        reviewsArr[reviewsArr.length - 1].classList.remove('hide');
+      } else {
+        reviewsArr[i].classList.add('hide');
+        reviewsArr[i-1].classList.remove('hide');
+      }
+      break;
     }
   }
-  console.log(reviewsArr.indexOf(currentReview));
-  console.log(arrowRight);
-  if (reviewsArr.indexOf(currentReview) === reviewsArr.length-1) {
-    arrowRight.classList.remove('arrow--disabled')
-    arrowRight.removeAttribute('disabled');
-  }
-  if (reviewsArr.indexOf(currentReview) === 1) {
-    currentReview.classList.add('hide');
-    currentReview.previousSibling.classList.remove('hide');
-    arrowLeft.classList.add('arrow--disabled');
-    arrowLeft.setAttribute('disabled', 'disabled');
-  }
-  else {
-    currentReview.classList.add('hide');
-    currentReview.previousSibling.classList.remove('hide');
-  }
 })
+
